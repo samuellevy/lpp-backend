@@ -1,0 +1,28 @@
+{
+  "name": "cedaesaude-backend",
+  "version": "1.0.0",
+  "description": "Site and content management system for Cedae Saude, written with CakePHP.",
+  "main": "index.js",
+  "repository": "git@github.com:samuellevy/cedaesaude-backend.git",
+  "author": "Samuel Levy",
+  "license": "MIT",
+  "scripts": {
+    "install-template": "cd plugins/Site && git clone git@bitbucket.org:3avinicius/cedae2.git frontend && cd frontend && yarn install && gulp build",
+    "update-template": "cd plugins/Site/frontend && git pull && yarn install && gulp build"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-inject": "^4.3.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
