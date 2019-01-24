@@ -36,11 +36,7 @@ class TestimonialsTable extends Table
     $validator
     ->requirePresence('name', 'create')
     ->notEmpty('name');
-
-    $validator
-    ->requirePresence('testimony', 'create')
-    ->notEmpty('testimony');
-
+    
     return $validator;
   }
 

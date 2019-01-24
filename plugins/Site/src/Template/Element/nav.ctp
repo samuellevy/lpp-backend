@@ -1,23 +1,10 @@
-<nav>
-    <div id="menu-toogle">
-        <input type="checkbox"><span></span><span></span><span></span>
-    </div>
+<nav class="list_menu">
     <ul>
-        <?php foreach($menu as $parent): ?>
-        <?php if($parent->status && $parent->top):?>
-        <li><a <?=$parent->url!=""?"href='".$parent->url."'":''?> > <?=$parent->title?></a>
-            <div class="dropdown-content">
-                <ul>
-                    <?php foreach($parent->child_menu as $child):?>
-                        <?php if($child->status):?>
-                            <li><a href="<?= $this->Url->build($child->url);?>" alt=""><?=$child->title?></a></li>
-                        <?php endif; ?>
-                    <?php endforeach;?>
-                </ul>
-            </div>
-        </li>
-        <?php endif; ?>
-        <?php endforeach; ?>
-        <li> <a class="last_icon" href="<?=$top_ouvidoria->content;?>" alt="">Fale com a Ouvidoria</a></li><a class="login" href="<?=$top_signin->content;?>" alt="">Entrar</a>
+    <li><a href="#">QUEM SOMOS</a></li>
+    <li><a href="#">O QUE FAZEMOS</a></li>
+    <li><a href="#">NOSSAS CONQUISTAS</a></li>
+    <li><a href="#">FALE CONOSCO</a></li>
+    <li><a href="#">COMO COLABORAR</a></li>
+    <li><a href="">APOIE NOSSA LUTA</a></li>
     </ul>
 </nav>

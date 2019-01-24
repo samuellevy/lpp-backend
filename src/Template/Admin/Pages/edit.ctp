@@ -64,12 +64,10 @@
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.sort', ['class'=>'form-control sortfield']);?>
                         <?php echo $this->Form->control('pages_components.'.$key.'.description', ['class'=>'form-control', 'type'=>'text','label'=>$page_component->caption]);?>
                       </li>
-
                       <?php elseif($page_component->component->type=='block'):?>
                       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.sort', ['class'=>'form-control sortfield']);?>
-
                         <?php
                         $selects = explode(',',$page_component->content);
                         foreach($selects as $index=>$select):
@@ -84,7 +82,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="row">
             <div class="col-md-10">

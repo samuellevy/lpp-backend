@@ -1,10 +1,12 @@
 <?php foreach($page->pages_components as $component):?>
     <?php if($component->component->type == 'editor' && $component->component->mode == 'banner'):?>
-    <div id="banner">
+    <div class="webdoor_principal">
+        <?=str_replace('<p>', '', str_replace('</p>', '', $component->content));?>
+        <div class="filter_bg"></div>
         <div class="wrapper">
-            <div class="webdoor_home">
-                <?php //print_r($this->ProcessImage->getImages($component->content));?> -->
-                <?=str_replace('<p>', '', str_replace('</p>', '', $component->content));?>
+            <div class="conntent_text">
+            <h2>Por um mundo com mais paz, justiça e solidariedade</h2>
+            <p>A Luta pela Paz é uma organização internacional sem fins lucrativos que tem como missão realizar o potencial de jovens trabalhando com eles pela prevenção da violência nas comunidades em que vivem.</p><a href="#">Apoie nossa Luta </a>
             </div>
         </div>
     </div>

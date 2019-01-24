@@ -32,13 +32,12 @@ class PagesController extends AppController
 		}
 
 		switch($this->request->getParam('slug')):
-			case 'noticias':
-				$this->loadModel('Posts');
-				$posts = $this->paginate($this->Posts, [
-					'conditions'=>['category_id'=>1]
-				]);
+			default:
+			case 'home':
+				$this->loadModel('Testimonials');
+				$testimonials = $this->Testimonials->find('all', ['contain'=>'Files']);
 
-				$this->set(compact('posts'));
+				$this->set(compact('testimonials'));
 			break;
 
 			case 'colunas':
@@ -50,23 +49,6 @@ class PagesController extends AppController
 				$this->set(compact('posts'));
 			break;
 
-			case 'dicas-de-saude':
-				$this->loadModel('Posts');
-				$posts = $this->paginate($this->Posts, [
-					'conditions'=>['category_id'=>3]
-				]);
-
-				$this->set(compact('posts'));
-			break;
-
-			case 'nossos-numeros':
-				$this->loadModel('Numbers');
-				$numbers = $this->Numbers->find('all', [
-					'contain'=>'Files'
-				])->all();
-
-				$this->set(compact(('numbers')));
-			break;
 		endswitch;
 		
 

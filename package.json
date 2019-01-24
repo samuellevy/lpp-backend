@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "install-template": "cd plugins/Site && git clone git@bitbucket.org:3avinicius/cedae2.git frontend && cd frontend && yarn install && gulp build",
-    "update-template": "cd plugins/Site/frontend && git pull && yarn install && gulp build"
+    "update-template": "cd plugins/Site/frontend && git pull && yarn install && gulp build",
+    "build-manager": "cd plugins/Gerenciador && gulp build"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",

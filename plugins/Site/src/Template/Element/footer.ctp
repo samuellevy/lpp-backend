@@ -1,50 +1,37 @@
-<?php
-//option one
-echo $full_footer->content;
-?>
-
-<!-- <footer id="footer">
-    <div class="menu">
-        <div class="wrapper">
-            <div class="logo">
-                <?=$this->Html->image('Site.../images/logo.png');?>
-            </div>
-            <?php foreach($menu as $parent): ?>
-                <?php if($parent->footer):?>
-                    <div class="item_list">
-                        <h5 class="title_footer"><?=$parent->title?></h5>
-                        <ul class="item">
-                            <?php foreach($parent->child_menu as $child):?>
-                                <li><a href="<?= $this->Url->build($child->url);?>" alt=""><?=$child->title?></a></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                <?php endif;?>
-            <?php endforeach; ?>
-        
-            <div class="ad">
-                <h5 class="title_footer">Patrocinadoras</h5>
-                <div class="media">
-                    <a target="_blank" href="http://www.cedae.com.br"><?=$this->Html->image('Site.../images/logo_footer.png');?></a>
-                    <a target="_blank" href="http://www.prece.com.br"><?=$this->Html->image('Site.../images/prece.png');?></a>
-                    </div>
-            </div>
-            <div class="certificacion">
-                <div class="media">
-                    <a target="_blank" href="http://www.ans.gov.br/"><?=$this->Html->image('Site.../images/colorida.png');?></a>
-                    <a target="_blank" href="http://www.ans.gov.br/"><?=$this->Html->image('Site.../images/ans.png');?></a>
-                    </div>
-            </div>
+<footer id="footer">
+<div class="menu">
+    <div class="wrapper">
+    <div class="item_list">
+        <ul class="item">
+        <li><a class="scrollSuave" href="#">Quem somos</a></li>
+        <li><a class="scrollSuave" href="#">O que fazemos</a></li>
+        <li><a class="scrollSuave" href="#">Nossas conquistas</a></li>
+        <li><a class="scrollSuave" href="#">Como colaborar</a></li>
+        </ul>
+        <ul class="item">
+        <li><a class="scrollSuave" href="#">Fale conosco</a></li>
+        <li><a class="scrollSuave" href="#">Aliança luta pela paz</a></li>
+        <li><a class="scrollSuave" href="#">Fight for peace</a></li>
+        <li><a class="scrollSuave" href="#">Novidades</a></li>
+        </ul>
+    </div>
+    <div class="media">
+        <div class="logo">
+            <?=$this->Html->image('Site.../images/logo.png');?>
+        </div>
+        <div class="social">
+            <?=$this->Html->image('Site.../images/facebook.png');?>
+            <?=$this->Html->image('Site.../images/twitter.png');?>
+            <?=$this->Html->image('Site.../images/instagram.png');?>
+            <?=$this->Html->image('Site.../images/youtube.png');?>
         </div>
     </div>
-    <div class="adress">
-        <div class="wrapper">
-            <?=$footer_presentation->content;?>
+    <div class="box">
+        <div class="div-strong-dark-blue">
+        <p class="color-white">Você faz parte de uma organização filiada à Aliança Luta Pela Paz? Faça seu login e acesse nossa rede! :)</p><br>
+        <button class="btn-dark-blue">ACESSAR ALIANÇA LPP</button>
         </div>
     </div>
-    <div class="copyright">
-        <div class="wrapper"><a href="#"><?=$this->Html->image('Site.../images/santa-fe-ideias.png');?></a>
-            <p>®Todos os direitos reservados</p>
-        </div>
     </div>
-</footer> -->
+</div>
+</footer>
