@@ -1,22 +1,16 @@
 <div class="gallery">
     <div class="box">
         <div class="media">
-            <?php echo $this->Html->image('Site.../images/galery_1.jpg');?>
-            <img src="images/galery_1.jpg" alt="">
+            <?='<img src="'.$this->Instagram->getLastPic()->images->standard_resolution->url.'"/>';?>
         </div>
         <div class="display">
-            <div class="item">
-                <?php echo $this->Html->image('Site.../images/galery_2.jpg');?>
-            </div>
-            <div class="item">
-                <?php echo $this->Html->image('Site.../images/galery_3.jpg');?>
-            </div>
-            <div class="item">
-                <?php echo $this->Html->image('Site.../images/galery_4.jpg');?>
-            </div>
-            <div class="item">
-                <?php echo $this->Html->image('Site.../images/galery_5.jpg');?>
-            </div>
+            <?php foreach($this->Instagram->getPics() as $i=>$data):?>
+                <?php if($i>0 && $i<9):?>
+                    <div class="item">
+                        <?='<img src="'.$data->images->standard_resolution->url.'"/>';?>                    
+                    </div>
+                <?php endif;?>
+            <?php endforeach;?>
         </div>
     </div>
 </div>

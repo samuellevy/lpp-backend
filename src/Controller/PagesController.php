@@ -36,8 +36,14 @@ class PagesController extends AppController
 			case 'home':
 				$this->loadModel('Testimonials');
 				$testimonials = $this->Testimonials->find('all', ['contain'=>'Files']);
-
 				$this->set(compact('testimonials'));
+
+				$this->loadModel('Posts');
+				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories']])->all();
+				$this->set(compact('posts'));
+
+				//Instagram
+				// $pictures = $this->Instagram->getPics();
 			break;
 
 			case 'fale-conosco':

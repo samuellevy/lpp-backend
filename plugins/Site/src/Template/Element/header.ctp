@@ -2,7 +2,7 @@
 <div class="wrapper">
     <div class="menu">
     <div class="logo">
-        <?=$this->Html->image('Site.../images/logo.png');?>
+        <a href='/'><?=$this->Html->image('Site.../images/logo.png');?></a>
     </div>
     <?=$this->element('nav');?>
     </div>
