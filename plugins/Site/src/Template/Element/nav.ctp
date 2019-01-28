@@ -1,15 +1,12 @@
-<nav class="list_menu">
-    <ul>
-    <!-- <li><a href="#">QUEM SOMOS</a></li>
-    <li><a href="#">O QUE FAZEMOS</a></li>
-    <li><a href="#">NOSSAS CONQUISTAS</a></li>
-    <li><a href="#">FALE CONOSCO</a></li>
-    <li><a href="#">COMO COLABORAR</a></li>
-    <li><a href="">APOIE NOSSA LUTA</a></li> -->
-    <?php foreach($menu as $parent): ?>
-        <?php if($parent->status && $parent->top):?>
-            <li><a <?=$parent->url!=""?"href='".$parent->url."'":''?> > <?=$parent->title?></a></li>
-        <?php endif; ?>
-    <?php endforeach; ?>
-    </ul>
+<nav role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox"><span></span><span></span><span></span>
+        <div class="logo"><?=$this->Html->image('Site.../images/logo.png');?></div>
+        <ul id="menu"><a href="#">
+        <?php foreach($menu as $parent): ?>
+            <?php if($parent->status && $parent->top):?>
+                <a <?=$parent->url!=""?"href='".$parent->url."'":''?> > <li><?=$parent->title?></li></a>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
 </nav>

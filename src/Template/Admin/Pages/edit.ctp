@@ -37,7 +37,7 @@
             </div>
           </div>
           <?php endif;?>
-
+          
           <div class="row">
             <div class="col-md-10">
               <div class="form-group">
@@ -45,7 +45,7 @@
                 <figure class="form-group">
                   <ul id="sortable" style="list-style:none;padding:0;">
                     <?php foreach($page->pages_components as $key=>$page_component):?>
-                    <?php if($page_component->component->type=='editor'):?>
+                      <?php if($page_component->component->type=='editor'):?>
                       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.sort', ['class'=>'form-control sortfield']);?>
@@ -71,18 +71,18 @@
                         <?php
                         $selects = explode(',',$page_component->content);
                         foreach($selects as $index=>$select):
-                          echo $this->Form->control('pages_components.'.$key.'.breaked_content.'.$index, ['class'=>'form-control', 'type'=>'select','label'=>'Posição '.$index, 'options'=>$posts_list, 'value'=>$select]);
+                        echo $this->Form->control('pages_components.'.$key.'.breaked_content.'.$index, ['class'=>'form-control', 'type'=>'select','label'=>'Posição '.$index, 'options'=>$posts_list, 'value'=>$select]);
                         endforeach;
                         ?>
                       </li>
                       <?php endif;?>
-                      <?php endforeach;?>
+                    <?php endforeach;?>
                   </ul>
                 </figure>
               </div>
             </div>
           </div>
-
+          
           <div class="row">
             <div class="col-md-10">
               <div class="form-group">
@@ -90,7 +90,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="clearfix"></div>
           <?= $this->Form->end() ?>
         </div>

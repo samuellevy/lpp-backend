@@ -48,6 +48,6 @@ CKEDITOR.editorConfig = function( config ) {
 	config.fillEmptyBlocks = false;
 	config.autoParagraph = false;
 
-	config.extraPlugins = 'colorbutton,colordialog,font';
+	config.extraPlugins = 'colorbutton,colordialog,font,widget,dialog,image2';
 	config.colorButton_enableMore = true;
 };
