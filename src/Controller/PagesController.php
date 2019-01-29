@@ -45,6 +45,12 @@ class PagesController extends AppController
 				//Instagram
 				// $pictures = $this->Instagram->getPics();
 			break;
+			case 'quem-somos':
+				$this->loadModel('Timeline');
+				$timeline = $this->Timeline->getByYears();
+				$this->set(compact('timeline'));
+				// die(debug($timeline));
+			break;
 
 			case 'fale-conosco':
 				$conf_active = 'always_active';

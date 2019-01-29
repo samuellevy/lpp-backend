@@ -26,43 +26,7 @@
         </div>
     </div>
 </div>
-<div class="timeline">
-    <div class="wrapper">
-        <h4>Nossa trajetória</h4>
-        <p>Fundada em 2000, pelo antropólogo e ex-boxeador inglês Luke Dowdney, a Luta pela Paz vem crescendo local e globalmente, buscando oferecer suporte e apoio necessário para auxiliar jovens a romper barreiras e alcançar a paz em suas comunidades. Acompanhe abaixo a evolução do nosso trabalho e os momentos mais marcantes da nossa trajetória.</p>
-    </div>
-    <div class="box">
-        <div class="wrapper">
-            <div class="slider">
-                <div class="item">
-                    <div class="block_content">
-                        <div class="media"><?php echo $this->Html->image('Site.../images/media_timeline.jpg');?></div>
-                        <div class="text">
-                            <h5>2000</h5>
-                            <p>A Academia Luta pela Paz (LPP) é fundada como um projeto da ONG Viva Rio em 22/8; o fundador Luke e a assistente social Míriam trabalhavam sozinhos para apenas 10 jovens.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="block_content">
-                        <div class="media"><?php echo $this->Html->image('Site.../images/media_timeline.jpg');?></div>
-                        <div class="text">
-                            <h5>2000</h5>
-                            <p>A Academia Luta pela Paz (LPP) é fundada como um projeto da ONG Viva Rio em 22/8; o fundador Luke e a assistente social Míriam trabalhavam sozinhos para apenas 10 jovens.</p>
-                        </div>
-                    </div>
-                    <div class="block_content">
-                        <div class="text">
-                            <h5>2000</h5>
-                            <p>A Academia Luta pela Paz (LPP) é fundada como um projeto da ONG Viva Rio em 22/8; o fundador Luke e a assistente social Míriam trabalhavam sozinhos para apenas 10 jovens.</p>
-                        </div>
-                        <div class="media"><?php echo $this->Html->image('Site.../images/media_timeline.jpg');?></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?=$this->element('page_modules/block_timeline');?>
 <div class="institucional">
     <div class="wrapper">
         <h4>Institucional</h4>

@@ -19,20 +19,32 @@
               </div>
             </div>
           </div>
-
+          <div class="row">
             <div class="col-md-5">
               <div class="form-group">
-                <label>Imagem Interna</label><br/>
+                <label>Imagem Desktop</label><br/>
                 <figure class="form-box-img">
-                  <img class="img-rounded form-img" src="http://via.placeholder.com/530x310">
+                  <img class="img-rounded form-img" src="http://via.placeholder.com/800x600">
                   <?php echo $this->Form->file('files.0.filename', ['class'=>'form-file']);?>
                   <?php echo $this->Form->hidden('files.0.entity', ['class'=>'form-file', 'value'=>'Number']);?>
-                  <?php echo $this->Form->hidden('files.0.obs', ['class'=>'form-file', 'value'=>'Intern']);?>
+                  <?php echo $this->Form->hidden('files.0.obs', ['class'=>'form-file', 'value'=>'Desktop']);?>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="form-group">
+                <label>Imagem Mobile</label><br/>
+                <figure class="form-box-img">
+                  <img class="img-rounded form-img" src="http://via.placeholder.com/400x300">
+                  <?php echo $this->Form->file('files.1.filename', ['class'=>'form-file']);?>
+                  <?php echo $this->Form->hidden('files.1.entity', ['class'=>'form-file', 'value'=>'Number']);?>
+                  <?php echo $this->Form->hidden('files.1.obs', ['class'=>'form-file', 'value'=>'Mobile']);?>
                 </figure>
               </div>
             </div>
           </div>
-
+          
           <div class="row">
             <div class="col-md-9">
               <div class="form-group">
@@ -40,11 +52,12 @@
               </div>
             </div>
           </div>
-
-          <div class="clearfix"></div>
-          <?= $this->Form->end() ?>
         </div>
+        
+        <div class="clearfix"></div>
+        <?= $this->Form->end() ?>
       </div>
     </div>
   </div>
+</div>
 </div>

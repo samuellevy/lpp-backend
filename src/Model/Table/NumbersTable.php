@@ -46,6 +46,22 @@ class NumbersTable extends Table
               'entity' => 'Number'
             ]
         ]);
+        $this->hasMany('Mobile', [
+            'className' => 'Files',
+            'foreignKey' => 'model_id',
+            'conditions' => [
+              'entity' => 'Number',
+              'obs'=>'Mobile'
+            ]
+        ]);
+        $this->hasMany('Desktop', [
+            'className' => 'Files',
+            'foreignKey' => 'model_id',
+            'conditions' => [
+              'entity' => 'Number',
+              'obs'=>'Desktop'
+            ]
+        ]);
     }
 
     /**

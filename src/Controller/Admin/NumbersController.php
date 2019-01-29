@@ -38,10 +38,9 @@ class NumbersController extends AppController
     $this->set('_serialize', ['number']);
   }
 
-  public function edit($id = null)
-  {
+  public function edit($id = null){
     $number = $this->Numbers->get($id, [
-      'contain' => ['Files']
+      'contain' => ['Files','Mobile','Desktop']
     ]);
 
     // die(debug($number));

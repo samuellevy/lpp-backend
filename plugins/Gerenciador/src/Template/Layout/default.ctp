@@ -1,4 +1,4 @@
-<?php $site_name = "Cedae Saude | Gerenciador"; ?>
+<?php $site_name = "Luta Pela Paz | Gerenciador 3AW"; ?>
 <!DOCTYPE html>
 <html>
 <head>
