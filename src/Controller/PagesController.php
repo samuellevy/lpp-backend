@@ -50,6 +50,22 @@ class PagesController extends AppController
 				$timeline = $this->Timeline->getByYears();
 				$this->set(compact('timeline'));
 				// die(debug($timeline));
+
+				$this->loadModel('Team');
+				$team_top = $this->Team->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['position'=>'top']
+				])->all();
+				$team_mid = $this->Team->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['position'=>'mid']
+				])->all();
+				$team_bot = $this->Team->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['position'=>'bot']
+				])->all();
+				$this->set(compact('team_top','team_mid','team_bot'));
+				// die(debug($team));
 			break;
 
 			case 'fale-conosco':

@@ -27,53 +27,7 @@
     </div>
 </div>
 <?=$this->element('page_modules/block_timeline');?>
-<div class="institucional">
-    <div class="wrapper">
-        <h4>Institucional</h4>
-        <div class="box">
-            <div class="item"><span>Diretoria Luta pela Paz</span>
-                <div class="equipe_media">
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.jpg')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                </div><span>Conselho Fiscal Luta pela Paz</span>
-                <div class="equipe_media">
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                    <div class="person"><?php echo $this->Html->image('Site.../images/media_diretoria.')?>
-                        <h5>Luke Dowdney</h5><span>Fundador & Diretor Presidente</span>
-                        <p>Luta pela Paz</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item"><span>Diretoria Luta pela Paz</span>
-                <div class="equipe">
-                    <div class="person">
-                        <h5>Andrew Parsons</h5><span>Presidente, Comitê Paralímpico Internacional</span>
-                    </div>
-                    <div class="person">
-                        <h5>Andrew Parsons</h5><span>Presidente, Comitê Paralímpico Internacional</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?=$this->element('page_modules/block_institucional');?>
 <div class="ambassadors">
     <div class="wrapper">
         <div class="box">
@@ -89,60 +43,4 @@
         </div>
     </div>
 </div>
-<div class="partners">
-    <div class="wrapper">
-        <h4>Nossos parceiros</h4>
-        <div class="box" id="tabs">
-            <div class="menu_partners">
-                <div class="item active" id="global" data-id="tabs-1">
-                    <div class="media_title"><?php echo $this->Html->image('Site.../images/global.png');?><span>Global oficial</span><span>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners')?></span></div>
-                </div>
-                <div class="item" id="brasil" data-id="tabs-2">
-                    <div class="media_title"><?php echo $this->Html->image('Site.../images/global.png');?><span>Global oficial</span><span>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners')?></span></div>
-                </div>
-                <div class="item" id="reino" data-id="tabs-3">
-                    <div class="media_title"><?php echo $this->Html->image('Site.../images/global.png');?><span>Global oficial</span><span>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners')?></span></div>
-                </div>
-                <div class="item" id="internacional" data-id="tabs-4">
-                    <div class="media_title"><?php echo $this->Html->image('Site.../images/global.png');?><span>Global oficial</span><span>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners')?></span></div>
-                </div>
-            </div>
-            <div class="content_partners" id="tabs-1"><span>Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior.</span>
-                <div class="media">
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                </div>
-            </div>
-            <div class="content_partners" id="tabs-2"><span>Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior.</span>
-                <div class="media">
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                </div>
-            </div>
-            <div class="content_partners" id="tabs-3"><span>Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior.</span>
-                <div class="media">
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                </div>
-            </div>
-            <div class="content_partners" id="tabs-4"><span>Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior.</span>
-                <div class="media">
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                    <div class="item_media"><?php echo $this->Html->image('Site.../images/parceiro_media.png');?></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?=$this->element('page_modules/block_partners');?>

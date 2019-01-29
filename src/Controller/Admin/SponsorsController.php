@@ -18,6 +18,12 @@ class SponsorsController extends AppController
 
   public function add(){
     $sponsor = $this->Sponsors->newEntity();
+    $sponsor_type = [0=>'Parcerias Institucionais', 1=>'Parceiros', 2=>'Apoiadores'];
+    $this->set(compact('sponsor_type'));
+
+    $this->loadModel('SponsorFrom');
+    $sponsor_from = $this->SponsorFrom->find('list');
+    $this->set(compact('sponsor_from'));
 
     if ($this->request->is('post')) {
       $sponsor = $this->Sponsors->patchEntity($sponsor, $this->request->getData(),[
@@ -38,13 +44,19 @@ class SponsorsController extends AppController
     $this->set('_serialize', ['sponsor']);
   }
 
-  public function edit($id = null)
-  {
+  public function edit($id = null){
+    $sponsor = $this->Sponsors->newEntity();
+    $sponsor_type = [0=>'Nenhum', 1=>'Parcerias Institucionais', 2=>'Parceiros', 3=>'Apoiadores'];
+    $this->set(compact('sponsor_type'));
+
+    $this->loadModel('SponsorFrom');
+    $sponsor_from = $this->SponsorFrom->find('list');
+    $this->set(compact('sponsor_from'));
+
     $sponsor = $this->Sponsors->get($id, [
       'contain' => ['Files']
     ]);
 
-    // die(debug($sponsor));
 
     if ($this->request->is(['patch', 'post', 'put'])) {
       $sponsor = $this->Sponsors->patchEntity($sponsor, $this->request->getData());

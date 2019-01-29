@@ -29,6 +29,26 @@
       <p>Números</p>
     </a>
   </li>
+  </li>
+  <li>
+    <a href="<?= $this->Url->build(["controller" => "team","action" => "index"]);?>" <?=$params['controller']=='Team'?"class='active'":""?>>
+      <i class="pe-7s-calculator"></i>
+      <p>Equipe</p>
+    </a>
+  </li>
+  </li>
+  <li>
+    <a href="<?= $this->Url->build(["controller" => "sponsors","action" => "index"]);?>" <?=$params['controller']=='Sponsors'?"class='active'":""?>>
+      <i class="pe-7s-calculator"></i>
+      <p>Patrocinadores</p>
+    </a>
+  </li>
+  <li>
+    <a href="<?= $this->Url->build(["controller" => "timeline","action" => "index"]);?>" <?=$params['controller']=='Timeline'?"class='active'":""?>>
+      <i class="pe-7s-calculator"></i>
+      <p>Linha do Tempo</p>
+    </a>
+  </li>
   <li>
     <a href="<?= $this->Url->build(["controller" => "modals","action" => "index"]);?>" <?=$params['controller']=='Modals'?"class='active'":""?>>
       <i class="pe-7s-calculator"></i>

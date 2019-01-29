@@ -11,7 +11,13 @@
                     <div class="item">
                     <?php foreach($year as $event):?>
                         <div class="block_content <?=$qtd_event%2==0?'':'reverse';?>">
-                            <div class="media"><?php echo $this->Html->image('Site.../images/media_timeline.jpg');?></div>
+                            <div class="media">
+                            <?php if(isset($event['files'][0])):?>
+                                <?php echo $this->Html->image('../uploads/files/'.$event['files'][0]['filename'], ['class'=>'', 'data-uid'=>$event['files'][0]['id']]);?>
+                            <?php else:?>
+                                <img class="img-rounded" src="http://via.placeholder.com/280x210">
+                            <?php endif;?>
+                            </div>
                             <div class="bar"></div>
                             <div class="text">
                                 <h5><?=$event->year;?></h5>

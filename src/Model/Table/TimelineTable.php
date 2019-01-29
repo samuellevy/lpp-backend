@@ -16,6 +16,14 @@ class TimelineTable extends Table
         $this->setTable('timeline');
         $this->setDisplayField('title');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('Files', [
+            'className' => 'Files',
+            'foreignKey' => 'model_id',
+            'conditions' => [
+              'entity' => 'Timeline'
+            ]
+        ]);
     }
 
     public function getYears(){
@@ -35,7 +43,8 @@ class TimelineTable extends Table
 
     public function getByYears(){
         $events = $this->find('all', [
-            'order'=>['Timeline.year']
+            'order'=>['Timeline.year'],
+            'contain'=>['Files']
         ])->all();
 
         $years = $this->getYears();
