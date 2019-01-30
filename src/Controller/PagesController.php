@@ -5,9 +5,6 @@ use Cake\Mailer\Email;
 
 class PagesController extends AppController
 {
-	/**
-	 * This function on controller will render views builded from database.
-	 */
 	public function view($slug=null){
 		$page = $this->Pages->find('all', [
 			'conditions'=>[
