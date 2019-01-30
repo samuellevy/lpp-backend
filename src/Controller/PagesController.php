@@ -46,6 +46,9 @@ class PagesController extends AppController
 				// $pictures = $this->Instagram->getPics();
 			break;
 			case 'quem-somos':
+				$conf_active = 'always_active';
+				$this->set(compact('conf_active'));
+
 				$this->loadModel('Timeline');
 				$timeline = $this->Timeline->getByYears();
 				$this->set(compact('timeline'));
@@ -87,6 +90,21 @@ class PagesController extends AppController
 				// die(debug($sponsors_brasil));
 			break;
 
+			case 'o-que-fazemos':
+				$conf_active = 'always_active';
+				$this->set(compact('conf_active'));
+			break;
+
+			case 'academias':
+				$conf_active = 'always_active';
+				$this->set(compact('conf_active'));
+			break;
+
+			case 'como-colaborar':
+				$conf_active = 'always_active';
+				$this->set(compact('conf_active'));
+			break;
+			
 			case 'fale-conosco':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -129,13 +147,17 @@ class PagesController extends AppController
 
 	
 	public function news($slug=null){
+		$conf_active = 'always_active';
+		$this->set(compact('conf_active'));
+
 		$this->loadModel('Posts');
 		$post = $this->Posts->getBySlug($slug);
 	
 		$posts = $this->Posts->find('all', [
 		  'contain'=>[
 			'files',
-			'Miniaturas'
+			'Miniaturas',
+			'BlogCategories'
 		  ],
 		  'limit' => 15,
 		  'conditions'=>['Posts.slug !='=>$slug],
