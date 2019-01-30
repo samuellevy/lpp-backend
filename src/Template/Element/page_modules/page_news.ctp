@@ -46,7 +46,7 @@
                             <div class="square square-red"></div><span class="color-red"><?=$post->blog_category->category;?></span>
                         </div>
                         <h3 class="color-navy-blue"><?=$post->title;?></h3>
-                        <p class="color-light-grey"><?=$post->description;?></p><span class="color-red">SAIBA MAIS ></span>
+                        <a href="/ler/<?=$post->slug;?>"><p class="color-light-grey"><?=$post->description;?></p><span class="color-red">SAIBA MAIS ></span></a>
                     </div>
                 </div>
             <?php endforeach;?>
