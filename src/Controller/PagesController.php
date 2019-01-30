@@ -71,14 +71,17 @@ class PagesController extends AppController
 					'contain'=>['Files'],
 					'conditions'=>['sponsor_from_id'=>'1']
 				])->all();
+
 				$sponsors_brasil = $this->Sponsors->find('all', [
 					'contain'=>['Files'],
 					'conditions'=>['sponsor_from_id'=>'2']
 				])->all();
+
 				$sponsors_uk = $this->Sponsors->find('all', [
 					'contain'=>['Files'],
 					'conditions'=>['sponsor_from_id'=>'3']
 				])->all();
+				
 				$sponsors_internacional = $this->Sponsors->find('all', [
 					'contain'=>['Files'],
 					'conditions'=>['sponsor_from_id'=>'4']
@@ -95,6 +98,10 @@ class PagesController extends AppController
 			case 'academias':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
+
+				$this->loadModel('Programs');
+				$programs = $this->Programs->find('all', ['contain'=>'Files']);
+				$this->set(compact('programs'));
 			break;
 
 			case 'como-colaborar':
@@ -110,6 +117,10 @@ class PagesController extends AppController
 			case 'nossas-conquistas':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
+
+				$this->loadModel('Testimonials');
+				$testimonials = $this->Testimonials->find('all', ['contain'=>'Files']);
+				$this->set(compact('testimonials'));
 			break;
 
 		endswitch;

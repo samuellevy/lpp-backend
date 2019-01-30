@@ -38,6 +38,12 @@ class TestimonialsController extends AppController
         ]
       ]); 
 
+      foreach($testimonial->files as $key_file=>$file){
+        if($file->filename==''){
+          unset($testimonial->files[$key_file]);
+        }
+      }
+
       $slug = $this->Fix->toSlug($testimonial->name);
       $count = 1;
       foreach ($testimonials as $item){

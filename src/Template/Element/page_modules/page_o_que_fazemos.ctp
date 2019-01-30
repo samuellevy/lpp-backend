@@ -13,7 +13,7 @@
         </div>
         <div class="box inverter">
             <div class="item">
-                <div class="media"><?php echo $this->Html->image('Site.../images/jamaica1.png');?></div>
+                <div class="media"><?php echo $this->Html->image('Site.../images/alianca.png');?></div>
             </div>
             <div class="item">
                 <div class="text">

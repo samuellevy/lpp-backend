@@ -5,11 +5,13 @@
             <?php foreach($testimonials as $testimonial):?>
             <div class="item">
                 <div class="media">
-                    <?php echo $this->Html->image('../uploads/files/'.$testimonial['files'][0]['filename']);?>
+                    <?php if(isset($testimonial['files'][0])):?>
+                        <?php echo $this->Html->image('../uploads/files/'.$testimonial['files'][0]['filename']);?>
+                    <?php endif;?>
                 </div>
                 <div class="content">
-                    <h3>Raissa Lima</h3><span>Aluna e Monitora de judô</span>
-                    <p>“A Luta pela Paz é o ponto mais positivo que a gente tem aqui na Maré. Ela me apoiou muito na questão familiar, que era muito difícil, na questão profissional e na educativa.”</p>
+                    <h3><?=$testimonial->name;?></h3><span><?=$testimonial->subtitle;?></span>
+                    <p><?=$testimonial->quote;?></p>
                 </div>
             </div>
             <?php endforeach; ?>
