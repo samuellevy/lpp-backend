@@ -58,14 +58,33 @@ class PagesController extends AppController
 				])->all();
 				$team_mid = $this->Team->find('all', [
 					'contain'=>['Files'],
-					'conditions'=>['position'=>'mid']
+					'conditions'=>['position'=>'bottom']
 				])->all();
 				$team_bot = $this->Team->find('all', [
 					'contain'=>['Files'],
-					'conditions'=>['position'=>'bot']
+					'conditions'=>['position'=>'both']
 				])->all();
 				$this->set(compact('team_top','team_mid','team_bot'));
-				// die(debug($team));
+
+				$this->loadModel('Sponsors');
+				$sponsors_global = $this->Sponsors->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['sponsor_from_id'=>'1']
+				])->all();
+				$sponsors_brasil = $this->Sponsors->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['sponsor_from_id'=>'2']
+				])->all();
+				$sponsors_uk = $this->Sponsors->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['sponsor_from_id'=>'3']
+				])->all();
+				$sponsors_internacional = $this->Sponsors->find('all', [
+					'contain'=>['Files'],
+					'conditions'=>['sponsor_from_id'=>'4']
+				])->all();
+				$this->set(compact('sponsors_global','sponsors_brasil','sponsors_uk','sponsors_internacional'));
+				// die(debug($sponsors_brasil));
 			break;
 
 			case 'fale-conosco':

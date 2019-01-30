@@ -18,7 +18,7 @@ class SponsorsController extends AppController
 
   public function add(){
     $sponsor = $this->Sponsors->newEntity();
-    $sponsor_type = [0=>'Parcerias Institucionais', 1=>'Parceiros', 2=>'Apoiadores'];
+    $sponsor_type = [0=>'Nenhum', 1=>'Parcerias Institucionais', 2=>'Parceiros', 3=>'Apoiadores'];
     $this->set(compact('sponsor_type'));
 
     $this->loadModel('SponsorFrom');

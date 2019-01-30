@@ -6,8 +6,8 @@
             </div>
             <div class="newsletter-input">
                 <form>
-                    <input class="e-mail" type="text" placeholder="E-mail">
-                    <input class="senha" type="password" placeholder="Senha">
+                    <input class="nome" type="text" placeholder="Nome">
+                    <input class="e-mail" type="password" placeholder="E-mail">
                     <button class="enviar">enviar</button>
                 </form>
             </div>

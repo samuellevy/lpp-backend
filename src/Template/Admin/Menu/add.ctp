@@ -7,7 +7,7 @@
         </div>
         <div class="content">
           <?= $this->Form->create($item) ?>
-
+          
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
@@ -15,7 +15,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
@@ -35,7 +35,8 @@
               </div>
             </div>
           </div>
-
+          
+          
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
@@ -44,7 +45,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
@@ -56,7 +57,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <?php echo $this->Form->control('footer', ['class'=>'form-control', 'label'=>'Colocar no footer', 'options'=>[0=>'Não', 1=>'Sim']]);?>
+                <?php echo $this->Form->control('top', ['class'=>'form-control', 'label'=>'Aparecer no topo', 'options'=>[0=>'Não', 1=>'Sim', ]]);?>
               </div>
             </div>
           </div>
@@ -64,11 +65,35 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
+                <?php echo $this->Form->control('footer', ['class'=>'form-control', 'label'=>'Aparecer no footer', 'options'=>[0=>'Não', 1=>'Sim', ]]);?>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <?php echo $this->Form->control('just_mobile', ['class'=>'form-control', 'label'=>'Somente mobile', 'options'=>[0=>'Não', 1=>'Sim', ]]);?>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <?php echo $this->Form->control('featured', ['class'=>'form-control', 'label'=>'Colocar como destaque', 'options'=>[0=>'Não', 1=>'Sim', ]]);?>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
                 <?= $this->Form->button(__('Salvar'), ['class'=>'btn btn-info btn-fill pull-right']) ?>
               </div>
             </div>
           </div>
-
+          
           <div class="clearfix"></div>
           <?= $this->Form->end() ?>
         </div>

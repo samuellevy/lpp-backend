@@ -23,7 +23,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
-                <?php echo $this->Form->control('sponder_from_id', ['class'=>'form-control', 'label'=>'Aba', 'options'=>$sponsor_from]);?>
+                <?php echo $this->Form->control('sponsor_from_id', ['class'=>'form-control', 'label'=>'Aba', 'options'=>$sponsor_from]);?>
               </div>
             </div>
           </div>

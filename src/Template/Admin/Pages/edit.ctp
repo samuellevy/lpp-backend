@@ -39,7 +39,7 @@
           <?php endif;?>
           
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <div class="form-group">
                 <label>Components</label><br/>
                 <figure class="form-group">
@@ -49,7 +49,11 @@
                       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
                         <?php echo $this->Form->hidden('pages_components.'.$key.'.sort', ['class'=>'form-control sortfield']);?>
-                        <?php echo $this->Form->control('pages_components.'.$key.'.content', ['class'=>'form-control ckeditor', 'label'=>$page_component->caption]);?>
+                        <fieldset style="border: 1px #c2c2c2 solid; padding: 5px;">
+                        <label><?=$page_component->caption;?></label><br/>
+                        <label><small>Classe</small></label><?php echo $this->Form->control('pages_components.'.$key.'.class', ['class'=>'form-control', 'label'=>false]);?>
+                        <label><small>Conteúdo</small></label><?php echo $this->Form->control('pages_components.'.$key.'.content', ['class'=>'form-control ckeditor', 'label'=>false]);?>
+                        </fieldset>
                       </li>
                       <?php elseif($page_component->component->type=='module'):?>
                       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">

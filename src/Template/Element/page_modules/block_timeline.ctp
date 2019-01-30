@@ -14,11 +14,11 @@
                             <div class="media">
                             <?php if(isset($event['files'][0])):?>
                                 <?php echo $this->Html->image('../uploads/files/'.$event['files'][0]['filename'], ['class'=>'', 'data-uid'=>$event['files'][0]['id']]);?>
-                            <?php else:?>
-                                <img class="img-rounded" src="http://via.placeholder.com/280x210">
                             <?php endif;?>
                             </div>
-                            <div class="bar"></div>
+                            <?php if(isset($event['files'][0])):?>
+                            <?php endif;?>
+                            <div class="bar" style="<?=isset($event['files'][0])?'':'background-color: transparent;';?>"></div>
                             <div class="text">
                                 <h5><?=$event->year;?></h5>
                                 <p><?=$event->description;?></p>

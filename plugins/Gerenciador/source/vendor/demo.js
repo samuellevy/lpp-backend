@@ -27,21 +27,21 @@ demo = {
           ]
         };
         
-        var optionsSales = {
-          lineSmooth: false,
-          low: 0,
-          high: 800,
-          showArea: true,
-          height: "245px",
-          axisX: {
-            showGrid: false,
-          },
-          lineSmooth: Chartist.Interpolation.simple({
-            divisor: 3
-          }),
-          showLine: false,
-          showPoint: false,
-        };
+        // var optionsSales = {
+        //   lineSmooth: false,
+        //   low: 0,
+        //   high: 800,
+        //   showArea: true,
+        //   height: "245px",
+        //   axisX: {
+        //     showGrid: false,
+        //   },
+        //   lineSmooth: Chartist.Interpolation.simple({
+        //     divisor: 3
+        //   }),
+        //   showLine: false,
+        //   showPoint: false,
+        // };
         
         var responsiveSales = [
           ['screen and (max-width: 640px)', {
@@ -53,7 +53,7 @@ demo = {
           }]
         ];
     
-        Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
+        //Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
         
     
         var data = {
@@ -83,7 +83,7 @@ demo = {
           }]
         ];
         
-        Chartist.Bar('#chartActivity', data, options, responsiveOptions);
+        //Chartist.Bar('#chartActivity', data, options, responsiveOptions);
     
         var dataPreferences = {
             series: [
@@ -102,12 +102,12 @@ demo = {
             }
         };
     
-        Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
+        //Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
         
-        Chartist.Pie('#chartPreferences', {
+        /*Chartist.Pie('#chartPreferences', {
           labels: ['62%','32%','6%'],
           series: [62, 32, 6]
-        });   
+        });*/   
     },
     
     initGoogleMaps: function(){

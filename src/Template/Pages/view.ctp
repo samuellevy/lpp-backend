@@ -1,6 +1,6 @@
 <?php foreach($page->pages_components as $key=>$component):?>
     <?php if($component->component->type == 'editor' && $component->component->mode == 'banner'):?>
-    <div class="webdoor_principal" data-id="<?=$key;?>">
+    <div class="webdoor_principal" data-id="<?=$key;?>" data-class="<?=$component->class;?>" data-size="<?=$component->description;?>">
         <?=str_replace('<p>', '', str_replace('</p>', '', $component->content));?>
     </div>
 

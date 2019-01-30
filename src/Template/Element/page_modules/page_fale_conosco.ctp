@@ -39,11 +39,3 @@
         </div>
     </div>
 </div>
-<div class="section_bg">
-    <div class="wrapper">
-        <div class="content_text">
-            <h2>Quer colaborar?</h2>
-            <p>Doando mensalmente para a Luta pela paz, você apoia jovens moradores de comunidades que sofrem com o crime e a violência a desenvolverem seu potencial. Clique no link abaixo, faça a sua doação e nos ajude a fazer um mundo com mais paz.</p><a href="#">Apoie nossa Luta</a>
-        </div>
-    </div>
-</div>

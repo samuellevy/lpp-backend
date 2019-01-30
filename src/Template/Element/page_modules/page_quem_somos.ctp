@@ -1,12 +1,3 @@
-<div class="webdoor_principal"><?php echo $this->Html->image('Site.../images/home.png');?>
-    <div class="filter_bg"></div>
-    <div class="wrapper">
-        <div class="conntent_text">
-            <h2>Por um mundo com mais paz, justiça e solidariedade</h2>
-            <p>A Luta pela Paz é uma organização internacional sem fins lucrativos que tem como missão realizar o potencial de jovens trabalhando com eles pela prevenção da violência nas comunidades em que vivem.</p><a href="#">Apoie nossa Luta </a>
-        </div>
-    </div>
-</div>
 <div class="three_pillars">
     <div class="wrapper">
         <div class="box">

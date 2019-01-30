@@ -63,7 +63,7 @@
 <!--  Checkbox, Radio & Switch Plugins -->
 <?= $this->Html->script('../vendor/bootstrap-checkbox-radio-switch.js') ?>
 <!--  Charts Plugin -->
-<?= $this->Html->script('../vendor/chartist.min.js') ?>
+<?php //= $this->Html->script('../vendor/chartist.min.js') ?>
 <!--  Notifications Plugin    -->
 <?= $this->Html->script('../vendor/bootstrap-notify.js') ?>
 <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
