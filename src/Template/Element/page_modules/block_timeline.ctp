@@ -9,7 +9,7 @@
                 <?=$qtd_event=0;?>
                 <?php foreach($timeline as $year):?>
                     <div class="item">
-                    <?php foreach($year as $event):?>
+                    <?php foreach($year as $key=>$event):?>
                         <div class="block_content <?=$qtd_event%2==0?'':'reverse';?>">
                             <div class="media">
                             <?php if(isset($event['files'][0])):?>
@@ -20,7 +20,7 @@
                             <?php endif;?>
                             <div class="bar" style="<?=isset($event['files'][0])?'':'background-color: transparent;';?>"></div>
                             <div class="text">
-                                <h5><?=$event->year;?></h5>
+                                <h5><?=$key==0?$event->year:'';?></h5>
                                 <p><?=$event->description;?></p>
                             </div>
                         </div>

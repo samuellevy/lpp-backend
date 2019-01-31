@@ -76,7 +76,7 @@
         </div>
     </div>
 </div>
-<div class="section_partnership">
+<div class="section_partnership" id="section_partnership">
     <div class="wrapper">
         <div class="box-container">
             <div class="box-content">

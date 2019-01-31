@@ -15,6 +15,6 @@
                 </div>
             </div>
             <?php endforeach; ?>
-        </div><a class="btn_more" href="#">Acompanhe</a>
+        </div><a class="btn_more" href="/nossas-conquistas">Acompanhe</a>
     </div>
 </div>

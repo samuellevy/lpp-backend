@@ -27,7 +27,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="item"><span>Diretoria Luta pela Paz</span>
+            <div class="item"><span>Conselho Consultivo Luta pela Paz</span>
                 <div class="equipe">
                     <?php foreach($team_bot as $person):?>
                     <div class="person">

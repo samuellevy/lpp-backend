@@ -7,7 +7,7 @@
             <div class="newsletter-input">
                 <form>
                     <input class="nome" type="text" placeholder="Nome">
-                    <input class="e-mail" type="password" placeholder="E-mail">
+                    <input class="e-mail" type="text" placeholder="E-mail">
                     <button class="enviar">enviar</button>
                 </form>
             </div>
