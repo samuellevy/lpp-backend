@@ -100,7 +100,7 @@ class PagesController extends AppController
 				$this->set(compact('conf_active'));
 
 				$this->loadModel('Programs');
-				$programs = $this->Programs->find('all', ['contain'=>'Files']);
+				$programs = $this->Programs->find('all', ['contain'=>'Files', 'conditions'=>['status']]);
 				$this->set(compact('programs'));
 			break;
 
