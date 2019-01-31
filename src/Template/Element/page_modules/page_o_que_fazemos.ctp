@@ -29,8 +29,9 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                        <h4 class="green">Programa Comunidades</br>Seguras - Jamaica</h4>
                         <p>Em 2015, a Luta pela Paz começou a executar o Programa Comunidades Seguras (PCS) em Kingston, Jamaica. Por meio de uma equipe local sediada em Kingston, a atuamos como uma organização de apoio, trabalhando em conjunto com as atores locais para colaborar na redução da violência juvenil. Ao longo dos anos, uma série de projetos vem sendo concebida com base nos Cinco Pilares da Luta pela Paz, envolvendo mais parceiros de todos os setores ao longo do tempo. A equipe da Luta pela Paz na Jamaica atua como a organização de suporte.</p>
+                    
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                    <h4 class="green">Programa Comunidades</br>Seguras - Jamaica</h4>
                         <p>O programa é aberto a todos os jovens, com idades entre 7 e 29 anos, que vivem em comunidades afetadas pela violência, mas foca naqueles jovens que estão mais envolvidos na violência.Todas as parcerias e atividades desenvolvidas nos programas da Luta pela Paz na Jamaica estão alinhadas a uma agenda comum, empregam métricas compartilhadas e são baseadas em uma Teoria da Mudança compartilhada.</p>
                     </div>
                 </div>
@@ -51,7 +52,7 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                    <h4 class="green">Programa Comunidades</br>Seguras - África do Sul</h4>
                         <p>Em 2016, a Luta pela Paz começou o Programa Comunidades Seguras (PCS) na Cidade do Cabo, na África do Sul. Por meio de uma equipe local sediada na Cidade do Cabo, atuamos como uma organização de apoio, trabalhando ao lado de atores locais para colaborar na redução da violência juvenil.O programa inicia, coordena, fortalece e integra programas de redução da violência juvenil em três comunidades afetadas por gangues: Manenberg, Guguelethu e Delft.</p>
                     </div>
                 </div>
@@ -62,7 +63,7 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                    <h4 class="green">Programa Comunidades</br>Seguras -  África do Sul</h4>
                         <p>Todas as parcerias e atividades desenvolvidas estão alinhadas a uma agenda comum, empregam métricas compartilhadas e são baseadas em uma Teoria da Mudança compartilhada.Em 2017, as atividades do Programa Comunidades Seguras impactaram diretamente 540 jovens e 137 adultos.</p>
                     </div>
                 </div>

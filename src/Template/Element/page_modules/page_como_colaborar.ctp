@@ -46,7 +46,7 @@
                 <div class="text">
                     <h3> Doe regularmente</h3>
                     <p>  Você pode ajudar a mantermos nosso trabalho em busca de um mundo com mais paz e justiça social. Doando mensalmente para à Luta pela Paz, você apoia jovens moradores de comunidades que sofrem com o crime e a violência a desenvolverem seu potencial! Clique abaixo, faça a sua doação e nos ajude a tornar o mundo mais solidário. </p>
-                    <button>Fazer doação regular</button>
+                    <a href="https://lutapelapaz.colabore.org/doacaoregularlpp/people/new">Quero doar</a>
                 </div>
             </div>
         </div>
@@ -55,13 +55,17 @@
                 <div class="text"><span>Veja como você pode ajudar:</span>
                     <ul>
                         <li> 
-                            <p>  Aulas de boxe e artes marciais que ajudam os jovens a ter mais disciplina e aprender que o sucesso depende de trabalho árduo e dedicação.</p>
+                            <p>Com R$30,00 compramos uniforme para um aluno de boxe ou arte marciais;</p>
                         </li>
                         <li> 
-                            <p>Aulas de reforço escolar para jovens de 11 a 15 anos potencializarem os aprendizados que recebem no sistema de educação formal.</p>
+                            <p>Com R$50,00 compramos material para auxiliar no aprendizado dos alunos do Reforço Escolar;
+</p>
                         </li>
                         <li> 
-                            <p>Aulas para jovens afastados da escola a mais de dois anos para que terminem seus estudos.</p>
+                            <p>Com R$80,00 fazemos oficinas de desenvolvimento pessoal para crianças e jovens;</p>
+                        </li>
+                        <li>
+                            <p>Com R$100,00 realizamos atendimento psicológico individual de crianças e jovens</p>
                         </li>
                     </ul>
                 </div>
@@ -69,8 +73,8 @@
             <div class="item-2">
                 <div class="text">
                     <h3> Doe regularmente</h3>
-                    <p>  Você quer ajudar o trabalho da Luta pela Paz mas não pode doar mensalmente? Faça uma doação única e ajude-nos a continuar impactando a vida de crianças e jovens moradores de comunidades afetadas pelo crime e violência.</p>
-                    <button>Fazer uma única doação</button>
+                    <p>Doe regularmente: Você pode ajudar a mantermos nosso trabalho em busca de um mundo com mais paz e justiça social. Doando mensalmente para a Luta pela Paz, você apoia jovens moradores de comunidades que sofrem com o crime e a violência a desenvolverem seus potenciais! Clique abaixo, faça a sua doação e nos ajude a tornar o mundo mais solidário.</p>
+                    <a href="https://lutapelapaz.colabore.org/doacaoregularlpp/people/new">Fazer uma única doação</a>
                 </div>
             </div>
         </div>
