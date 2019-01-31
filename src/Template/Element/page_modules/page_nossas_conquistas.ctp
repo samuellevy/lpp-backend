@@ -2,7 +2,7 @@
     <div class="box">
         <div class="destaque">
             <div class="first">
-                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_1.png');?></div><a class="btn_numbers" href="#">acompanhe nossas conquistas</a>
+                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_1.png');?></div>
             </div>
         </div>
         <div class="display">
