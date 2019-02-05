@@ -16,7 +16,10 @@
                 <div class="publicado"><span>Publicado em <?=$post->created;?></span></div>
                 <div class="media"><span>Compartilhe:</span>
                     <div class="twitter"><?php echo $this->Html->image('Site.../images/twitter_news.png');?><a href="#">Twitter</a></div>
-                    <div class="facebook">    <?php echo $this->Html->image('Site.../images/facebook_news.png');?><a href="#">Facebook</a></div>
+                    <div class="facebook" id="facebook-btn">
+                        <?php echo $this->Html->image('Site.../images/facebook_news.png');?>
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?=$this->Url->build('/ler/'.$post->slug, true);?>','popUpWindow','height=500,width=600,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no, status=yes');">Facebook</a>
+                    </div>
                     <div class="whatsapp"><?php echo $this->Html->image('Site.../images/whatsapp_news.png');?><a href="#">Whatsapp</a></div>
                 </div>
             </div>
