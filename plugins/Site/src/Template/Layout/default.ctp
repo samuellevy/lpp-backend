@@ -9,7 +9,7 @@
     <?= $this->Html->script('main.js') ?>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
-    <title>Blog</title>
+    <title>Luta Pela Paz</title>
   </head>
   <body>
     <?=$this->element('loading');?>
