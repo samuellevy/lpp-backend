@@ -10,6 +10,10 @@
                 <div class="form-pad"></div>
                 <select>
                     <option value="0">Selecione um assunto</option>
+                    <option value="1">Dúvidas</option>
+                    <option value="2">Sugestões</option>
+                    <option value="3">Doação</option>
+                    <option value="4">Parcerias</option>
                 </select>
                 <div class="form-pad"></div>
                 <textarea placeholder="Escreva sua mensagem"></textarea>

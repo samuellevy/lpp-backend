@@ -93,6 +93,10 @@ class PagesController extends AppController
 			case 'o-que-fazemos':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
+
+				$this->loadModel('Offices');
+				$offices = $this->Offices->find('all')->all();
+				$this->set(compact('offices'));
 			break;
 
 			case 'academias':
