@@ -8,9 +8,9 @@
                 <div class="text">
                     <p>Utilizamos um modelo de saúde pública que foca em três</br> níveis de prevenção de violência:</p>
                     <ul>
-                        <li><span>1º</span> É onde fornecemos apoio e oportunidades de inclusão para jovens em comunidades afetadas pelo crime. </li>
+                        <li><span>1º</span> Fornecemos apoio necessário e oportunidade de inclusão para jovens em comunidades afetadas pelo crime e violência. </li>
                         <li><span>2º</span> Focamos em pessoas ou grupos em situação de risco de se tornarem vítimas ou autores. </li>
-                        <li><span>3º</span> Apoiamos pessoas que querem sair do crime e da violência para que não retornem ou se tornem vítimas novamente. </li>
+                        <li><span>3º</span> Apoiamos jovens egressos para que não se retornem ou se tornem vítimas novamente. </li>
                     </ul>
                 </div>
             </div>

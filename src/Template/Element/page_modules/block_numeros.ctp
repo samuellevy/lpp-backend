@@ -6,7 +6,7 @@
                     <?php echo $this->Html->image('Site.../images/numbers_1.png', ['class'=>'desktop']);?>
                     <?php echo $this->Html->image('Site.../images/numbers_2_mobile.png', ['class'=>'mobile']);?>
                 </div>
-                <a class="btn_numbers" href="#">acompanhe nossas conquistas</a>
+                <a class="btn_numbers" href="/nossas-conquistas">acompanhe nossas conquistas</a>
             </div>
         </div>
         <div class="display">

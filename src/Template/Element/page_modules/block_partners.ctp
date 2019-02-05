@@ -6,7 +6,7 @@
                 <div class="item" id="global" data-id="tabs-1">
                     <div class="media_title">
                         <?php echo $this->Html->image('Site.../images/global.png');?>
-                        <span>Global oficial</span>
+                        <span>Global</span>
                     </div>
                     <p>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
                 </div>

@@ -17,8 +17,9 @@
                     </div>
                     <?php endforeach;?>
                 </div>
-                <span>Conselho Consultivo Luta pela Paz</span>
-                <div class="equipe_media">
+                <span>Conselho Fiscal Luta pela Paz</span>
+                
+                <div class="equipe">
                     <?php foreach($team_mid as $person):?>
                     <div class="person">
                         <h5><?=$person->name;?></h5><span><?=$person->role;?></span>
@@ -27,7 +28,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="item"><span>Diretoria Luta pela Paz</span>
+            <div class="item"><span>Conselho Consultivo Luta pela Paz</span>
                 <div class="equipe">
                     <?php foreach($team_bot as $person):?>
                     <div class="person">
