@@ -74,7 +74,7 @@
             <?=$this->element('page_modules/map_svg');?>
             <div class="content-box">
                 <?php foreach($offices as $office):?>
-                <div class="item-office" data-target="<?=$office->class;?>">
+                <div class="item-office <?=$office->invert?'invert':''?>" data-target="<?=$office->class;?>">
                     <div class="title"><?=$office->name;?></div>
                     <div class="body">
                         <?=$office->content;?>
