@@ -17,7 +17,7 @@ class DocumentsTable extends Table
     $this->setDisplayField('name');
     $this->setPrimaryKey('id');
 
-    $this->hasOne('Files', [
+    $this->hasMany('Files', [
       'className' => 'Files',
       'foreignKey' => 'model_id',
       'conditions' => [

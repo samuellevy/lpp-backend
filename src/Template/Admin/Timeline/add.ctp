@@ -11,7 +11,7 @@
             <div class="col-md-3">
               <div class="form-group">
                 <?php echo $this->Form->control('year', ['class'=>'form-control', 'label'=>'Ano']);?>
-                <?php echo $this->Form->control('description', ['class'=>'form-control', 'label'=>'Descrição']);?>
+                <?php echo $this->Form->control('description', ['class'=>'form-control ckeditor', 'label'=>'Descrição']);?>
               </div>
             </div>
           </div>

@@ -9,8 +9,7 @@ use App\Controller\AppControllerAdmin;
 */
 class DocumentsController extends AppController
 {
-  public function index()
-  {
+  public function index(){
     $documents = $this->paginate($this->Documents, [
       'contain'=>[
         'Files',
@@ -24,8 +23,7 @@ class DocumentsController extends AppController
     $this->set('_serialize', ['documents']);
   }
 
-  public function add()
-  {
+  public function add(){
     $document = $this->Documents->newEntity();
 
     if ($this->request->is('post')) {
@@ -60,8 +58,7 @@ class DocumentsController extends AppController
     $this->set('_serialize', ['documents']);
   }
 
-  public function edit($id = null)
-  {
+  public function edit($id = null){
     $document = $this->Documents->get($id, [
       'contain' => [
         'Files'
@@ -69,11 +66,16 @@ class DocumentsController extends AppController
     ]);
 
     if ($this->request->is(['patch', 'post', 'put'])) {
-      $old_document = $document;
-      $old_files = $document->getOriginal('files');
       $document = $this->Documents->patchEntity($document, $this->request->getData());
-      // procura file vazio
-      
+  
+      foreach($document->files as $key_file=>$file){
+        if($file->filename==''){
+          unset($document->files[$key_file]);
+        }
+      }
+
+      // die(debug($this->request->getData()));
+
       if ($this->Documents->save($document)) {
         $this->Flash->success(__('Salvo com sucesso.'));
 

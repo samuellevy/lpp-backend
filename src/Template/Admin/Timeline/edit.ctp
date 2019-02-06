@@ -8,10 +8,10 @@
         <div class="content">
           <?= $this->Form->create($timeline, ['type'=>'file']) ?>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-9">
               <div class="form-group">
                 <?php echo $this->Form->control('year', ['class'=>'form-control', 'label'=>'Ano']);?>
-                <?php echo $this->Form->control('description', ['class'=>'form-control', 'label'=>'Título']);?>
+                <?php echo $this->Form->control('description', ['class'=>'form-control ckeditor', 'label'=>'Título']);?>
               </div>
             </div>
           </div>
