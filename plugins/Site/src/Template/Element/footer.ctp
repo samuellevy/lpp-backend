@@ -19,10 +19,10 @@
                     <?=$this->Html->image('Site.../images/logo.png');?>
                 </div>
                 <div class="social">
-                    <?=$this->Html->image('Site.../images/facebook.png');?>
-                    <?=$this->Html->image('Site.../images/twitter.png');?>
-                    <?=$this->Html->image('Site.../images/instagram.png');?>
-                    <?=$this->Html->image('Site.../images/youtube.png');?>
+                    <a href="https://www.facebook.com/LutapelaPaz/" target="_blank"><?=$this->Html->image('Site.../images/facebook.png');?></a>
+                    <a href="https://twitter.com/lutapelapaz/" target="_blank"><?=$this->Html->image('Site.../images/twitter.png');?></a>
+                    <a href="https://www.instagram.com/lutapelapaz/" target="_blank"><?=$this->Html->image('Site.../images/instagram.png');?></a>
+                    <a href="https://www.youtube.com/user/LutapelaPazBrasil/" target="_blank"><?=$this->Html->image('Site.../images/youtube.png');?></a>
                 </div>
             </div>
             <div class="box">

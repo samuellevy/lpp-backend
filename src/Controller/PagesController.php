@@ -136,6 +136,15 @@ class PagesController extends AppController
 				$this->set(compact('count_documents_pe','count_documents_ra','count_documents_au'));
 			break;
 
+			case 'news':
+				$conf_active = 'always_active';
+				$this->set(compact('conf_active'));
+
+				$this->loadModel('Posts');
+				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories']])->all();
+				$this->set(compact('posts'));
+			break;
+
 		endswitch;
 		
 

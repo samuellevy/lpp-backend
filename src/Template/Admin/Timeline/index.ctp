@@ -11,6 +11,7 @@
             <thead>
               <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('year', ['label'=>'Ano']) ?></th>
                 <th scope="col"><?= $this->Paginator->sort('description', ['label'=>'Descrição']) ?></th>
                 <!--th scope="col"><?= $this->Paginator->sort('tipo', ['label'=>'Status']) ?></th-->
                 <th scope="col" class="actions"><?= __('Opções') ?></th>
@@ -20,6 +21,7 @@
               <?php foreach ($timeline as $event): ?>
                 <tr>
                   <td><?= $this->Number->format($event->id) ?></td>
+                  <td><?= h($event->year) ?></td>
                   <td><?= h($event->description) ?></td>
                   <td class="actions">
                     <?php //= $this->Html->link(__('Ver'), ['action' => 'view', $event->id]) ?>

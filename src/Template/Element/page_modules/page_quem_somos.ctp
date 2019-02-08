@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="box">
             <div class="item">
-                <div class="media"><?php echo $this->Html->image('Site.../images/media_pillars.jpg');?></div>
+                <div class="media"><?php echo $this->Html->image('Site.../images/pillars.jpg');?></div>
             </div>
             <div class="item">
                 <div class="text">
