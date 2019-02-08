@@ -25,6 +25,18 @@
         <div class="box programs_slider">
             <div class="item_slider">
                 <div class="item">
+                    <div class="media"><?php echo $this->Html->image('Site.../images/comunidade-segura.jpg');?></div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                        <p>O Programa Comunidades Seguras é implementado em centros de violência urbana, onde faltam recursos básicos. Utilizamos o modelo de impacto coletivo em parceria com organizações locais, governos, agências internacionais, doadores e o setor privado, a fim de juntos trazer uma mudança positiva para aquele local. Atualmente, nossos escritórios na Cidade do Cabo, África do Sul e em Kingston, Jamaica, executam o Programa Comunidades Seguras.</p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="item_slider">
+                <div class="item">
                     <div class="media"><?php echo $this->Html->image('Site.../images/jamaica1.png');?></div>
                 </div>
                 <div class="item">

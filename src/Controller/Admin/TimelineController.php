@@ -63,4 +63,17 @@ class TimelineController extends AppController
     $this->set(compact('timeline'));
     $this->set('_serialize', ['timeline']);
   }
+
+  public function delete($id = null)
+  {
+    $this->request->allowMethod(['post', 'delete']);
+    $timeline = $this->Timeline->get($id);
+    if ($this->Timeline->delete($timeline)) {
+      $this->Flash->success(__('Removido com sucesso.'));
+    } else {
+      $this->Flash->error(__('Não pôde ser removido.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+  }
 }

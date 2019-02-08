@@ -106,6 +106,10 @@ class PagesController extends AppController
 				$this->loadModel('Programs');
 				$programs = $this->Programs->find('all', ['contain'=>'Files', 'conditions'=>['status']]);
 				$this->set(compact('programs'));
+				
+				$this->loadModel('Pillars');
+				$pillars = $this->Pillars->find('all');
+				$this->set(compact('pillars'));
 			break;
 
 			case 'como-colaborar':

@@ -11,11 +11,11 @@
                     <div class="item">
                     <?php foreach($year as $key=>$event):?>
                         <div class="block_content <?=$qtd_event%2==0?'':'reverse';?>">
-                            <div class="media">
                             <?php if(isset($event['files'][0])):?>
-                                <?php echo $this->Html->image('../uploads/files/'.$event['files'][0]['filename'], ['class'=>'', 'data-uid'=>$event['files'][0]['id']]);?>
+                                <div class="media">
+                                    <?php echo $this->Html->image('../uploads/files/'.$event['files'][0]['filename'], ['class'=>'', 'data-uid'=>$event['files'][0]['id']]);?>
+                                </div>
                             <?php endif;?>
-                            </div>
                             <?php if(isset($event['files'][0])):?>
                             <?php endif;?>
                             <div class="bar" style="<?=isset($event['files'][0])?'':'background-color: transparent;';?>"></div>

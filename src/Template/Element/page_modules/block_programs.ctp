@@ -16,7 +16,21 @@
                         </div>
                         <div class="item">
                             <h5>Pilares </h5>
-                            <div class="content"><?php echo $this->Html->image('Site.../images/boxe.png');?><span>Boxe e artes marciais</span><?php echo $this->Html->image('Site.../images/liderancajuvenil.png');?><span>Liderança juvenil</span><?php echo $this->Html->image('Site.../images/suportelocal.png');?><span>Suporte social</span></div>
+                            <div class="content">
+                                <?php
+                                $my_pillars = $program->pillars;
+                                $my_pillars = explode(',',$my_pillars);
+
+                                foreach($my_pillars as $my_pillar):
+                                    foreach($pillars as $pillar):
+                                        if($my_pillar==$pillar->id):
+                                            echo $this->Html->image('Site.../images/'.$pillar->image).'<span>'.$pillar->name.'</span>';
+                                        endif;
+                                    endforeach;
+                                endforeach;
+                                ?>
+                                
+                            </div>
                         </div>
                         <div class="item">
                             <h5>Atuação</h5>
