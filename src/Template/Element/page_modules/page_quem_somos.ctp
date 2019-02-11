@@ -10,7 +10,7 @@
                     <ul>
                         <li><span>1º</span> Fornecemos apoio necessário e oportunidade de inclusão para jovens em comunidades afetadas pelo crime e violência. </li>
                         <li><span>2º</span> Focamos em pessoas ou grupos em situação de risco de se tornarem vítimas ou autores. </li>
-                        <li><span>3º</span> Apoiamos jovens egressos para que não se retornem ou se tornem vítimas novamente. </li>
+                        <li><span>3º</span> Apoiamos jovens egressos para que não retornem ou se tornem vítimas novamente. </li>
                     </ul>
                 </div>
             </div>
