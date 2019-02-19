@@ -76,4 +76,17 @@ class SponsorsController extends AppController
     $this->set(compact('sponsor'));
     $this->set('_serialize', ['sponsor']);
   }
+
+  public function delete($id = null){
+    $this->request->allowMethod(['post', 'delete']);
+    $sponsor = $this->Sponsors->get($id);
+    if ($this->Sponsors->delete($sponsor)) {
+      $this->Flash->success(__('Removido com sucesso.'));
+    } else {
+      $this->Flash->error(__('Não pôde ser removido.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+  }
+
 }

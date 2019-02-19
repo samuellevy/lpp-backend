@@ -22,7 +22,7 @@
                     <h4>Como minha doação pode</br> impactar a vida de um jovem?</h4><span>Com doações a partir de <b>R$30,00</b> mensais ou apenas <b>R$1,00 real por dia</b>, investimos em:</span>
                     <ul>
                         <li> 
-                            <p>  Aulas de boxe e artes marciais que ajudam os jovens a ter mais disciplina e aprender que o sucesso depende de trabalho árduo e dedicação.</p>
+                            <p>Aulas de boxe e artes marciais que ajudam os jovens a ter mais disciplina e aprender que o sucesso depende de trabalho árduo e dedicação.</p>
                         </li>
                         <li> 
                             <p>Aulas de reforço escolar para jovens de 11 a 15 anos potencializarem os aprendizados que recebem no sistema de educação formal.</p>
@@ -55,17 +55,16 @@
                 <div class="text"><span>Veja como você pode ajudar:</span>
                     <ul>
                         <li> 
-                            <p>Com R$30,00 compramos uniforme para um aluno de boxe ou arte marciais;</p>
+                            <p>Com R$30,00 compramos uniforme para um aluno de boxe ou arte marciais.</p>
                         </li>
                         <li> 
-                            <p>Com R$50,00 compramos material para auxiliar no aprendizado dos alunos do Reforço Escolar;
-</p>
+                            <p>Com R$50,00 compramos material para auxiliar no aprendizado dos alunos do Reforço Escolar.</p>
                         </li>
                         <li> 
-                            <p>Com R$80,00 fazemos oficinas de desenvolvimento pessoal para crianças e jovens;</p>
+                            <p>Com R$80,00 fazemos oficinas de desenvolvimento pessoal para crianças e jovens.</p>
                         </li>
                         <li>
-                            <p>Com R$100,00 realizamos atendimento psicológico individual de crianças e jovens</p>
+                            <p>Com R$100,00 realizamos atendimento psicológico individual de crianças e jovens.</p>
                         </li>
                     </ul>
                 </div>
@@ -87,16 +86,16 @@
                 <h4>Empresas e Fundações</h4>
                 <p> Seja parceiro da Luta pela Paz e engaje-se na transformação da vida dos jovens. Existem inúmeras maneiras de empresas apoiarem a Luta pela Paz, através de relacionamentos de vários níveis que assegurem que tanto a empresa quanto os jovens obterão os melhores benefícios com a parceria. </p><span>Veja como você pode nos apoiar, sendo empresa ou fundação:</span>
                 <ul>
-                    <li><span>Lei de Incentivo ao Esporte;</span></li>
-                    <li><span>Financiamento institucional (irrestrito);</span></li>
-                    <li><span>Doação de até 1% do Imposto de Renda por empresas tributadas por Lucro Real;</span></li>
+                    <li><span>Lei de Incentivo ao Esporte.</span></li>
+                    <li><span>Financiamento institucional (irrestrito).</span></li>
+                    <li><span>Doação de até 1% do Imposto de Renda por empresas tributadas por Lucro Real.</span></li>
                     <li><span>Áreas específicas de apoio focado.</span></li>
-                    <li><span>Escolhendo a Luta pela Paz como organização do ano;</span></li>
-                    <li><span>Mobilização de funcionários para captar fundos;</span></li>
-                    <li><span>Apoio probono;</span></li>
-                    <li><span>Voluntariado;</span></li>
-                    <li><span>Doação única;</span></li>
-                    <li><span>Editais;</span></li>
+                    <li><span>Escolhendo a Luta pela Paz como organização do ano.</span></li>
+                    <li><span>Mobilização de funcionários para captar fundos.</span></li>
+                    <li><span>Apoio probono.</span></li>
+                    <li><span>Voluntariado.</span></li>
+                    <li><span>Doação única.</span></li>
+                    <li><span>Editais.</span></li>
                 </ul><span>Entre em contato a nossa equipe para se tornar um parceiro da Luta pela Paz.</span>
             </div>
             <div class="box-form">

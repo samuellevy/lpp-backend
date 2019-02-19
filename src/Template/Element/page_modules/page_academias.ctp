@@ -4,7 +4,7 @@
         <div class="box">
             <div class="item" data-id="1">
                 <div class="top"><?php echo $this->Html->image('Site.../images/academia-i-1.png');?>
-                    <h3>Boxe e artes marciais</h3>
+                    <h3>Boxe e Artes Marciais</h3>
                 </div>
                 <div class="bottom">
                     <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.</p>
@@ -28,7 +28,7 @@
             </div>
             <div class="item" data-id="4">
                 <div class="top"><?php echo $this->Html->image('Site.../images/academia-i-4.png');?>
-                    <h3>Suporte social</h3>
+                    <h3>Suporte Social</h3>
                 </div>
                 <div class="bottom">
                     <p>Acompanhamentos aos jovens e seus familiares através de mentoria individual, serviço social e psicologia. Trabalha através de atendimentos individuais e em grupo para apoio, orientação e encaminhamento assistencial.</p>
@@ -36,7 +36,7 @@
             </div>
             <div class="item" data-id="5">
                 <div class="top"><?php echo $this->Html->image('Site.../images/academia-i-5.png');?>
-                    <h3>Liderança juvenil</h3>
+                    <h3>Liderança Juvenil</h3>
                 </div>
                 <div class="bottom">
                     <p>Desenvolvimento de protagonismo juvenil nas diversas atividades da organização e através dos Conselhos Jovens, grupo de representantes dos jovens que participam de espaços de tomada de decisão e representam a organização.</p>

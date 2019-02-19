@@ -8,12 +8,13 @@ class PagesController extends AppController
 	public function view($slug=null){
 		$page = $this->Pages->find('all', [
 			'conditions'=>[
-				'slug'=>$slug
+				'slug'=>$slug,
 			],
 			'limit'=>1,
 			'contain'=>[
 				'PagesComponents'=>[
-					'sort'=>['sort'=>'asc']
+					'sort'=>['sort'=>'asc'],
+					'conditions'=>['status'=>1]
 				],
 				'PagesComponents.Components',
 			]

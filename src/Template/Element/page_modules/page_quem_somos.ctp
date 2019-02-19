@@ -10,7 +10,7 @@
                     <ul>
                         <li><span>1º</span> Fornecemos apoio necessário e oportunidade de inclusão para jovens em comunidades afetadas pelo crime e violência. </li>
                         <li><span>2º</span> Focamos em pessoas ou grupos em situação de risco de se tornarem vítimas ou autores. </li>
-                        <li><span>3º</span> Apoiamos jovens egressos para que não retornem ou se tornem vítimas novamente. </li>
+                        <li><span>3º</span> Apoiamos jovens em situação de extrema vulnerabilidade para que não retornem ou se tornem vítimas novamente. </li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <p>Nicola Adams OBE é a mais bem sucedida boxeadora da Grã-Bretanha até hoje. Nas Olimpíadas de Londres 2012, ela se tornou um ícone após ganhar a primeira medalha de ouro no Boxe para seu país, um feito que ela repetiu em 2016 nas Olimpíadas do Rio de Janeiro tornando-se a primeira boxeadora britânica a defender com sucesso seu título olímpico por 92 anos.</p>
                 <p>Entre essas vitórias olímpicas, Nicola tornou-se campeã europeia e da Commonwealth e ganhou o Campeonato Mundial de 2016, assegurando títulos com grande êxito. Ganhar esses títulos no boxe amador fez com que ela tornasse-se uma boxeadora profissional e tem até o momento o recorde de três vitórias e nenhuma derrota.</p>
                 <div class="destaque">
-                    <p>“Estou muito orgulhosa de ser Embaixadora da Luta pela Paz e apoiar essa organização fantástica com seu trabalho de realizar o potencial de jovens para prevenir a violência em suas comunidades. Tendo visitado a Luta pela paz tanto no Rio de Janeiro quanto em Londres me mostrou a real importância do trabalho que organização faz em escala global e estou muito satisfeita de ter a chance de ajudar a fazer a diferença na vida de jovens e encorajar mais jovens mulheres a fazer parte desses organização impressionante”.</p>
+                    <p>“Estou muito orgulhosa de ser Embaixadora da Luta pela Paz e apoiar essa organização fantástica com seu trabalho de realizar o potencial de jovens para prevenir a violência em suas comunidades. Tendo visitado a Luta pela paz tanto no Rio de Janeiro quanto em Londres me mostrou a real importância do trabalho que organização faz em escala global e estou muito satisfeita de ter a chance de ajudar a fazer a diferença na vida de jovens e encorajar mais jovens mulheres a fazer parte dessa organização impressionante”.</p>
                 </div>
             </div>
         </div>
