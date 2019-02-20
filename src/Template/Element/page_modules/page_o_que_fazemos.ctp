@@ -83,10 +83,11 @@
         </div>
 
         <div class="box map-section">
-            <div class="flag-lpp" id="BRASIL"></div>
-            <div class="flag-lpp" id="GRA_BETANHA"></div>
-            <div class="flag-lpp" id="JAMAICA"></div>
-            <div class="flag-lpp" id="AFRICA_DO_SUL"></div>
+            <div class="flag-lpp map-action" id="flag_BRASIL"></div>
+            <div class="flag-lpp map-action" id="flag_GRA_BETANHA"></div>
+            <div class="flag-lpp map-action" id="flag_JAMAICA"></div>
+            <div class="flag-lpp map-action" id="flag_AFRICA_DO_SUL"></div>
+
             <?=$this->element('page_modules/map_svg');?>
             <div class="content-box">
                 <?php foreach($offices as $office):?>
@@ -97,6 +98,21 @@
                     </div>
                 </div>
                 <?php endforeach;?>
+
+
+                <div class="item-office" data-target="flag_BRASIL">
+                    <div class="title">Academia Rio de Janeiro</div>
+                </div>
+                <div class="item-office" data-target="flag_GRA_BETANHA">
+                    <div class="title">Academia Londres</div>
+                </div>
+                <div class="item-office" data-target="flag_JAMAICA">
+                    <div class="title">Escritório Programa Comunidades Seguras</div>
+                </div>
+                <div class="item-office" data-target="flag_AFRICA_DO_SUL">
+                    <div class="title">Escritório Programa Comunidades Seguras</div>
+                </div>
+
             </div>
         </div>
     </div>
