@@ -2,7 +2,7 @@
     <div class="box_slider">
         <div class="item">
             <video autoplay loop muted>
-                <source src="<?=$this->Url->image('Site.../images/ffp-compressed.mp4');?>" type="video/mp4" lpo/>
+                <source src="<?=$this->Url->image('Site.../images/ffp-compressed_2.mp4');?>" type="video/mp4" lpo/>
                 <!-- <source src="<?=$this->Url->image('Site.../images/movie.ogg');?>" type="video/ogg"/> -->
             </video>
         </div>
