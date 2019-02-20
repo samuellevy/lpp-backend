@@ -5,7 +5,7 @@ use Cake\View\Helper;
 
 class InstagramHelper extends Helper {
   public function getLastPic(){
-    $token = '268576432.04494fa.634108095f1a486081b85d1d78bce41b';
+    $token = '2349678369.144cf0f.217ea087bae247d299e552272c81dc88';
     $url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token='.$token;
     $user_info = (file_get_contents($url)); 
 
@@ -19,7 +19,7 @@ class InstagramHelper extends Helper {
     return $return;
   }
   public function getPics(){
-    $token = '268576432.04494fa.634108095f1a486081b85d1d78bce41b';
+    $token = '2349678369.144cf0f.217ea087bae247d299e552272c81dc88';
     $url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token='.$token;
     $user_info = (file_get_contents($url)); 
 
