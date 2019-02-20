@@ -83,6 +83,10 @@
         </div>
 
         <div class="box map-section">
+            <div class="flag-lpp" id="BRASIL"></div>
+            <div class="flag-lpp" id="GRA_BETANHA"></div>
+            <div class="flag-lpp" id="JAMAICA"></div>
+            <div class="flag-lpp" id="AFRICA_DO_SUL"></div>
             <?=$this->element('page_modules/map_svg');?>
             <div class="content-box">
                 <?php foreach($offices as $office):?>
