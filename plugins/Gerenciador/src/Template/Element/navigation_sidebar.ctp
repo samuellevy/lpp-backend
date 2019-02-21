@@ -30,6 +30,12 @@
     </a>
   </li>
   <li>
+    <a href="<?= $this->Url->build(["controller" => "offices","action" => "index"]);?>" <?=$params['controller']=='Offices'?"class='active'":""?>>
+      <i class="pe-7s-calculator"></i>
+      <p>Escritórios</p>
+    </a>
+  </li>
+  <li>
     <a href="<?= $this->Url->build(["controller" => "numbers","action" => "index"]);?>" <?=$params['controller']=='Numbers'?"class='active'":""?>>
       <i class="pe-7s-calculator"></i>
       <p>Números</p>

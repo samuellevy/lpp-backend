@@ -50,7 +50,7 @@
                 <h5><?=$count_documents_au>0?'Auditorias':''?></h5>
                 <div class="content slider_transparencia">
                     <?php foreach($documents as $document):?>
-                    <?php if($document->category_id==3  ):?>
+                    <?php if($document->category_id==3):?>
                     <div class="item">
                         <div class="item-content">
                             <div class="title">

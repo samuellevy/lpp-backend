@@ -138,6 +138,8 @@ class PagesController extends AppController
 				$count_documents_pe = count($this->Documents->find('all', ['contain'=>'Files', 'conditions'=>['category_id'=>1]])->all());
 				$count_documents_ra = count($this->Documents->find('all', ['contain'=>'Files', 'conditions'=>['category_id'=>2]])->all());
 				$count_documents_au = count($this->Documents->find('all', ['contain'=>'Files', 'conditions'=>['category_id'=>3]])->all());
+
+				// die(debug($documents->all()));
 				$this->set(compact('count_documents_pe','count_documents_ra','count_documents_au'));
 			break;
 
