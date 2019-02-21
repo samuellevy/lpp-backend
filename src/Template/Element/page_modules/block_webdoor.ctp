@@ -5,6 +5,7 @@
                 <source src="<?=$this->Url->image('Site.../images/ffp-compressed_2.mp4');?>" type="video/mp4" lpo/>
                 <!-- <source src="<?=$this->Url->image('Site.../images/movie.ogg');?>" type="video/ogg"/> -->
             </video>
+            <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank"><div class="button-play"><img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div></a>
         </div>
         <div class="item">
             <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
