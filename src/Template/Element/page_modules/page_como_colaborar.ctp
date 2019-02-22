@@ -73,7 +73,7 @@
                 <div class="text">
                     <h3>Doação única</h3>
                     <p>Você quer ajudar o trabalho da Luta pela Paz mas não pode doar mensalmente? Faça uma doação única e ajude-nos a continuar impactando a vida de crianças e jovens moradores de comunidades afetadas pelo crime e violência.</p>
-                    <a href="https://lutapelapaz.colabore.org/doacaoregularlpp/people/new">Fazer uma única doação</a>
+                    <a href="https://lutapelapaz.colabore.org/doacaounicalpp/people/new">Fazer uma única doação</a>
                 </div>
             </div>
         </div>

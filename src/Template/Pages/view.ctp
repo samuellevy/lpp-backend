@@ -49,6 +49,24 @@
 <?php endif;?>
 <?php endforeach;?>
 
+<div id="dialog-youtube" title="">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h7l2XdqLwYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#dialog-youtube").dialog({
+            autoOpen: false,
+            modal: true,
+            width: 600,
+            height: 390
+        });
+
+        $('.button-play').click(function(){
+            $('#dialog-youtube').dialog('open');
+        });
+    });
+</script>
+
 <?php if(isset($modals)):?>
 <?php foreach($modals as $modal):?>
 <div id="dialog" title="<?=$modal->title?>">

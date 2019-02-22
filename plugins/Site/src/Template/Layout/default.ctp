@@ -34,7 +34,6 @@
     <?=$this->fetch('content');?>
     <?=$this->element('footer');?>
   </div>
-  <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
 </body>
 </html>
