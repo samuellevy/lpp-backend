@@ -40,6 +40,10 @@ class PagesController extends AppController
 				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories']])->all();
 				$this->set(compact('posts'));
 
+				if ($this->request->is('post')) {
+					$this->contact($this->request->getData());
+				}
+
 				//Instagram
 				// $pictures = $this->Instagram->getPics();
 			break;
@@ -116,11 +120,19 @@ class PagesController extends AppController
 			case 'como-colaborar':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
+
+				if ($this->request->is('post')) {
+					$this->contact($this->request->getData());
+				}
 			break;
 			
 			case 'fale-conosco':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
+				
+				if ($this->request->is('post')) {
+					$this->contact($this->request->getData());
+				}
 			break;
 
 			case 'nossas-conquistas':
@@ -207,5 +219,63 @@ class PagesController extends AppController
 		$this->set(compact(['post', 'posts', 'title']));
 		// $this->set('_serialize', ['post', 'posts']);
 		// die(debug($post));
-	  }
+	}
+
+	public function contact($message, $origin=null){
+		// die(debug($message['assunto']));
+
+		switch($message['assunto']):
+			default:
+				$assunto = 'Dúvidas';
+				$email = 'info@lutapelapaz.org';
+				break;
+			case 1:
+				$assunto = 'Dúvidas';
+				$email = 'info@lutapelapaz.org';
+				break;
+			case 2:
+				$assunto = 'Sugestões';
+				$email = 'info@lutapelapaz.org';
+				break;
+			case 3:
+				$assunto = 'Doação';
+				$email = 'soudoador@lutapelapaz.org';
+				break;
+			case 4:
+				$assunto = 'Parcerias';
+				$email = 'captacao@lutapelapaz.org';
+				break;
+			case 5:
+				$assunto = 'Newsletter';
+				break;
+		endswitch;
+		
+		$email = new Email('default');
+
+		if($message['assunto']==5){
+			$email->template('newsletter')
+			->emailFormat('html')
+			->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
+			->to('samuellevy.nave@gmail.com')
+			->addTo('samuel.levy@3aworldwide.com.br')
+			->subject('['.$assunto.'] Luta Pela Paz')
+			->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
+			// ->attachments([$message->file])
+			->send();
+			$this->Flash->success(__('Seu cadastro foi enviado com sucesso!'));
+		}else{
+			$email->template('contact')
+			->emailFormat('html')
+			->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
+			->to('samuellevy.nave@gmail.com')
+			->addTo('samuel.levy@3aworldwide.com.br')
+			->subject('['.$assunto.'] Luta Pela Paz')
+			->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
+			// ->attachments([$message->file])
+			->send();
+			$this->Flash->success(__('Sua mensagem foi enviada com sucesso!'));
+		}
+		
+		// die(debug($message));
+	}
 }

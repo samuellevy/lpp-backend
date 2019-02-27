@@ -43,6 +43,49 @@
                 </div>
             </div>
         </div>
+        
+        <div class="mobile-box">
+            <div class="item">
+                <div class="top" data-id="tabs-1"><?php echo $this->Html->image('Site.../images/boxe-mobile.png');?>
+                    <h3>Boxe e artes marciais</h3><?php echo $this->Html->image('Site.../images/arrow-mobile.png');?>
+                </div>
+                <div class="bottom" id="tabs-1">
+                    <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top" data-id="tabs-2"><?php echo $this->Html->image('Site.../images/educacao-mobile.png');?>
+                    <h3>Educação</h3><?php echo $this->Html->image('Site.../images/arrow-mobile.png');?>
+                </div>
+                <div class="bottom" id="tabs-2">
+                    <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top" data-id="tabs-3"><?php echo $this->Html->image('Site.../images/empregabilidade-mobile.png');?>
+                    <h3>Empregabilidade</h3><?php echo $this->Html->image('Site.../images/arrow-mobile.png');?>
+                </div>
+                <div class="bottom" id="tabs-3">
+                    <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top" data-id="tabs-4"><?php echo $this->Html->image('Site.../images/suportelocal-mobile.png');?>
+                    <h3>Suporte social</h3><?php echo $this->Html->image('Site.../images/arrow-mobile.png');?>
+                </div>
+                <div class="bottom" id="tabs-4">
+                    <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top" data-id="tabs-5"><?php echo $this->Html->image('Site.../images/liderancajuvenil-mobile.png');?>
+                    <h3>Liderança juvenil</h3><?php echo $this->Html->image('Site.../images/arrow-mobile.png');?>
+                </div>
+                <div class="bottom" id="tabs-5">
+                    <p>Esses esportes promovem respeito, disciplina, autocontrole, sentimento de pertencimento, autoestima, além de atraírem os jovens para participarem dos projetos.        </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="section_worth">
@@ -64,4 +107,6 @@
         </div>
     </div>
 </div>
+
 <?=$this->element('page_modules/block_programs');?>
+<?=$this->element('page_modules/block_programs_mobile');?>

@@ -4,11 +4,12 @@
     <p>Faça seu comentário, dê sua sugestão e tire suas dúvidas.</p>
     <div class="container_form_map">
         <div class="contato">
-            <form>
-                <input class="name" type="text" placeholder="Nome">
-                <input class="email" type="text" placeholder="E-mail">
+            <?php echo $this->Form->create('contato', ['type'=>'file']); ?>
+                <?=$this->Flash->render(); ?>
+                <input name="name" type="text" placeholder="Nome">
+                <input name="email" type="text" placeholder="E-mail">
                 <div class="form-pad"></div>
-                <select>
+                <select name="assunto">
                     <option value="0">Selecione um assunto</option>
                     <option value="1">Dúvidas</option>
                     <option value="2">Sugestões</option>
@@ -16,12 +17,12 @@
                     <option value="4">Parcerias</option>
                 </select>
                 <div class="form-pad"></div>
-                <textarea placeholder="Escreva sua mensagem"></textarea>
-                <div class="form-pad"></div>
-                <button class="anexo">ANEXAR ARQUIVO<?php echo $this->Html->image('Site.../images/clip.png');?></button>
-                <div class="form-pad"></div>
+                <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                
+                <!-- <button class="anexo">ANEXAR ARQUIVO<?php echo $this->Html->image('Site.../images/clip.png');?></button> -->
                 <button class="btn-send">ENVIAR</button>
-            </form>
+                <?php //echo $this->Form->file('file', ['class'=>'form-file']);?>
+            <?php echo $this->Form->end(); ?>
         </div>
         <div id="map">
             <div class="map"> 

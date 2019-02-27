@@ -101,16 +101,19 @@
             <div class="box-form">
                 <h4>Quer ser nosso parceiro?</h4>
                 <p>Entre em contato conosco! Faça seu comentário, dê sua sugestão e tire suas dúvidas.</p>
-                <form>
-                    <input class="name" type="text" placeholder="Nome">
-                    <input class="email" type="text" placeholder="E-mail">
+                <?php echo $this->Form->create('contato', ['type'=>'file']); ?>
+                    <?=$this->Flash->render(); ?>
+                    <input name="name" type="text" placeholder="Nome">
                     <div class="form-pad"></div>
-                    <textarea placeholder="Escreva sua mensagem"></textarea>
+                    <input name="email" type="text" placeholder="E-mail">
+                    <input name="assunto" type="hidden" value="4">
+                    <div class="form-pad"></div>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
                     <div class="form-pad"></div>
                     <button class="anexo">ANEXAR ARQUIVO<?php echo $this->Html->image('Site.../images/green-clip.png');?></button>
                     <div class="form-pad"></div>
                     <button class="btn-send">ENVIAR</button>
-                </form>
+                <?php echo $this->Form->end(); ?>
             </div>
         </div>
     </div>
