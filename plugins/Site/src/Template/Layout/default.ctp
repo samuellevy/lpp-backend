@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <?= $this->Html->meta('icon') ?>
+  <link rel="icon" href="http://lutapelapaz.org/site/images/logo.png" />
   <?= $this->Html->css('main.css?'.uniqid(rand(), true)) ?>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <?= $this->Html->script('main.js?'.uniqid(rand(), true)) ?>
