@@ -251,30 +251,34 @@ class PagesController extends AppController
 		endswitch;
 		
 		$email = new Email('default');
-
-		if($message['assunto']==5){
-			$email->template('newsletter')
-			->emailFormat('html')
-			->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
-			->to('samuellevy.nave@gmail.com')
-			->addTo('samuel.levy@3aworldwide.com.br')
-			->subject('['.$assunto.'] Luta Pela Paz')
-			->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
-			// ->attachments([$message->file])
-			->send();
-			$this->Flash->success(__('Seu cadastro foi enviado com sucesso!'));
-		}else{
-			$email->template('contact')
-			->emailFormat('html')
-			->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
-			->to('samuellevy.nave@gmail.com')
-			->addTo('samuel.levy@3aworldwide.com.br')
-			->subject('['.$assunto.'] Luta Pela Paz')
-			->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
-			// ->attachments([$message->file])
-			->send();
-			$this->Flash->success(__('Sua mensagem foi enviada com sucesso!'));
+		try {
+			if($message['assunto']==5){
+				$email->template('newsletter')
+				->emailFormat('html')
+				->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
+				->to('samuellevy.nave@gmail.com')
+				->addTo('samuel.levy@3aworldwide.com.br')
+				->subject('['.$assunto.'] Luta Pela Paz')
+				->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
+				// ->attachments([$message->file])
+				->send();
+				$this->Flash->success(__('Seu cadastro foi enviado com sucesso!'));
+			}else{
+				$email->template('contact')
+				->emailFormat('html')
+				->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
+				->to('samuellevy.nave@gmail.com')
+				->addTo('samuel.levy@3aworldwide.com.br')
+				->subject('['.$assunto.'] Luta Pela Paz')
+				->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
+				// ->attachments([$message->file])
+				->send();
+				$this->Flash->success(__('Sua mensagem foi enviada com sucesso!'));
+			}	
+		} catch (Exception $e) {
+			
 		}
+
 		
 		// die(debug($message));
 	}
