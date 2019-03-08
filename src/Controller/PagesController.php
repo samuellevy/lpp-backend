@@ -208,7 +208,7 @@ class PagesController extends AppController
 			'Miniaturas',
 			'BlogCategories'
 		  ],
-		  'limit' => 15,
+		  'limit' => 4,
 		  'conditions'=>['Posts.slug !='=>$slug],
 		  'order'=>[
 			'created'=>'DESC'
