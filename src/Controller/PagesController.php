@@ -37,7 +37,7 @@ class PagesController extends AppController
 				$this->set(compact('testimonials'));
 
 				$this->loadModel('Posts');
-				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories']])->all();
+				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories'], 'limit'=>4])->all();
 				$this->set(compact('posts'));
 
 				if ($this->request->is('post')) {
@@ -208,7 +208,7 @@ class PagesController extends AppController
 			'Miniaturas',
 			'BlogCategories'
 		  ],
-		  'limit' => 4,
+		  'limit' => 15,
 		  'conditions'=>['Posts.slug !='=>$slug],
 		  'order'=>[
 			'created'=>'DESC'
@@ -256,8 +256,7 @@ class PagesController extends AppController
 				$email->template('newsletter')
 				->emailFormat('html')
 				->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
-				// ->to('samuellevy.nave@gmail.com')
-				->to($email)
+				->to('samuellevy.nave@gmail.com')
 				->addTo('samuel.levy@3aworldwide.com.br')
 				->subject('['.$assunto.'] Luta Pela Paz')
 				->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
@@ -268,8 +267,7 @@ class PagesController extends AppController
 				$email->template('contact')
 				->emailFormat('html')
 				->from(['noreply@lutapelapaz.org' => 'Luta Pela Paz [lutapelapaz.org]'])
-				// ->to('samuellevy.nave@gmail.com')
-				->to($email)
+				->to('samuellevy.nave@gmail.com')
 				->addTo('samuel.levy@3aworldwide.com.br')
 				->subject('['.$assunto.'] Luta Pela Paz')
 				->viewVars(['nome'=>$message['name'],'email'=>$message['email'],'assunto'=>$assunto,'mensagem'=>$message['mensagem']])
