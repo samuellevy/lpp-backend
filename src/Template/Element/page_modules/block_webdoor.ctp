@@ -1,13 +1,6 @@
 <div class="webdoor_slider">
     <div class="box_slider">
         <div class="item">
-            <video autoplay loop muted>
-                <source src="<?=$this->Url->image('Site.../images/ffp-movie-new.mp4');?>" type="video/mp4" />
-                <!-- <source src="<?=$this->Url->image('Site.../images/movie.ogg');?>" type="video/ogg"/> -->
-            </video>
-            <div class="button-play"><img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
-        </div>
-        <div class="item">
             <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
             <div class="filter_bg"></div>
             <div class="wrapper">
