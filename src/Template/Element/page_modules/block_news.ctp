@@ -4,7 +4,7 @@
         <?php foreach($posts as $post):?>
         <div class="item">
             <div class="media">
-                <?php echo $this->Html->image('../uploads/files/'.$post['files'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$post['files'][0]['id']]);?>
+            <a href="/ler/<?=$post->slug;?>"><?php echo $this->Html->image('../uploads/files/'.$post['files'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$post['files'][0]['id']]);?></a>
             </div>
             <div class="content">
                 <div class="square_content">
