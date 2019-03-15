@@ -37,7 +37,7 @@ class PagesController extends AppController
 				$this->set(compact('testimonials'));
 
 				$this->loadModel('Posts');
-				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories'], 'limit'=>4, 'order'=>['created'=>'DESC']])->all();
+				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories'], 'limit'=>4])->all();
 				$this->set(compact('posts'));
 
 				if ($this->request->is('post')) {
