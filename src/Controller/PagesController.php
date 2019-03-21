@@ -211,26 +211,26 @@ class PagesController extends AppController
 		  'limit' => 4,
 		  'conditions'=>['Posts.slug !='=>$slug],
 		  'order'=>[
-			'created'=>'DESC'
+			'category_id'=>'DESC'
 		  ]
 		]);
-		$posts_category = $this->Posts->find('all', [
-			'contain'=>[
-				'files',
-				'Miniaturas',
-				'BlogCategories',
-			  ],
-			'limit' => 4,
-			'conditions'=>['Posts.category_id ='=>$post->category_id],
-			'order'=>[
-			  'created'=>'DESC'
-			]
-		  ]);
-		$posts_category = $posts_category->all();
+		// $posts_category = $this->Posts->find('all', [
+		// 	'contain'=>[
+		// 		'files',
+		// 		'Miniaturas',
+		// 		'BlogCategories',
+		// 	  ],
+		// 	'limit' => 4,
+		// 	'conditions'=>['Posts.category_id ='=>$post->category_id],
+		// 	'order'=>[
+		// 	  'created'=>'DESC'
+		// 	]
+		//   ]);
+		// $posts_category = $posts_category->all();
 		$posts = $posts->all();
 		$title = $post->title;
 		//die(debug($posts_category));
-		$this->set(compact(['post', 'posts','posts_category', 'title']));
+		$this->set(compact(['post', 'posts', 'title']));
 		// $this->set('_serialize', ['post', 'posts']);
 		// die(debug($post));
 	}
