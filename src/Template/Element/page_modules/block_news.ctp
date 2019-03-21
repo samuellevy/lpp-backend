@@ -1,7 +1,7 @@
 <div class="section_news">
     <h1>Notícias</h1>
     <div class="box">
-        <?php foreach($posts as $post):?>
+        <?php foreach($posts_category as $post):?>
         <div class="item">
             <div class="media">
             <a href="/ler/<?=$post->slug;?>"><?php echo $this->Html->image('../uploads/files/'.$post['files'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$post['files'][0]['id']]);?></a>
