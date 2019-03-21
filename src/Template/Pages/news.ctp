@@ -1,1 +1,1 @@
-<?=$this->element('page_modules/page_news');?>
+<?//=$this->element('page_modules/page_news');?>
