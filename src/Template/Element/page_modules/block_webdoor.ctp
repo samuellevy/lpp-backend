@@ -2,7 +2,11 @@
     <div class="box_slider">
         <div class="item">
             <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
-            <div class="button-play"><img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
+            <div class="filter_bg"></div>
+            <div class="button-play">
+            <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank">
+                <img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
+            </a>
         </div>
         <div class="item">
             <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
