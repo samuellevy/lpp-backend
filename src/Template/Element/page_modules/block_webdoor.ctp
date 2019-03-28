@@ -1,6 +1,10 @@
 <div class="webdoor_slider">
     <div class="box_slider">
         <div class="item">
+            <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
+            <div class="button-play"><img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
+        </div>
+        <div class="item">
             <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
             <div class="filter_bg"></div>
             <div class="wrapper">
