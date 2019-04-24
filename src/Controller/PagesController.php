@@ -194,7 +194,6 @@ class PagesController extends AppController
 		$this->set(compact(['page', 'page_title', 'modals']));
 	}
 
-	
 	public function news($slug=null){
 		$conf_active = 'always_active';
 		$this->set(compact('conf_active'));
@@ -234,6 +233,7 @@ class PagesController extends AppController
 		// $this->set('_serialize', ['post', 'posts']);
 		// die(debug($post));
 	}
+	
 	public function marco($slug=null){
 		$conf_active = 'always_active';
 		$this->set(compact('conf_active'));
