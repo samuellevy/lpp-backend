@@ -1,7 +1,7 @@
 <div class="timeline">
     <div class="wrapper">
-        <h4>Nossa trajetória</h4>
-        <p>Fundada em 2000, pelo antropólogo e ex-boxeador inglês Luke Dowdney, a Luta pela Paz vem crescendo local e globalmente, buscando oferecer suporte e apoio necessário para auxiliar jovens a romper barreiras e alcançar a paz em suas comunidades. Acompanhe abaixo a evolução do nosso trabalho e os momentos mais marcantes da nossa trajetória.</p>
+        <h4>Our history</h4>
+        <p>Fight for Peace was founded in Complexo da Mare, Rio de Janeiro, in 2000 by anthropologist and British ex-amateur boxer Luke Dowdney. Since then, we have  grown both locally and globally, offering the support necessary for young people to break down barriers and achieve peace in their communities. Take a look at the timeline below at the key moments in our history and how our work has evolved.</p>
     </div>
     <div class="box">
         <div class="wrapper">

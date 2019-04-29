@@ -6,11 +6,11 @@
             </div>
             <div class="item">
                 <div class="text">
-                    <p>Utilizamos um modelo de saúde pública que foca em três</br> níveis de prevenção de violência:</p>
+                    <p>We use a public health model which focuses on three levels of </br> violence prevention.</p>
                     <ul>
-                        <li><span>1º</span> Fornecemos apoio necessário e oportunidade de inclusão para jovens em comunidades afetadas pelo crime e violência. </li>
-                        <li><span>2º</span> Focamos em pessoas ou grupos em situação de risco de se tornarem vítimas ou autores. </li>
-                        <li><span>3º</span> Apoiamos jovens em situação de extrema vulnerabilidade para que não retornem ou se tornem vítimas novamente. </li>
+                        <li><span>1º</span> We offer opportunities and support for the socio-economic inclusion of all young people living in communities affected by crime and violence.</li>
+                        <li><span>2º</span> We focus on individuals or groups identified as being at risk of becoming victims or perpetrators of crime and violence. </li>
+                        <li><span>3º</span> We support young people to disengage from crime and violence, and work to prevent them reoffending or being victimised again. </li>
                     </ul>
                 </div>
             </div>
@@ -24,11 +24,11 @@
         <div class="box">
             <div class="media"><?php echo $this->Html->image('Site.../images/nicolaadams.jpg');?></div>
             <div class="content_text">
-                <h4>Embaixadores</h4><span>Nicola Adams</span>
-                <p>Nicola Adams OBE é a mais bem sucedida boxeadora da Grã-Bretanha até hoje. Nas Olimpíadas de Londres 2012, ela se tornou um ícone após ganhar a primeira medalha de ouro no Boxe para seu país, um feito que ela repetiu em 2016 nas Olimpíadas do Rio de Janeiro tornando-se a primeira boxeadora britânica a defender com sucesso seu título olímpico por 92 anos.</p>
-                <p>Entre essas vitórias olímpicas, Nicola tornou-se campeã europeia e da Commonwealth e ganhou o Campeonato Mundial de 2016, assegurando títulos com grande êxito. Ganhar esses títulos no boxe amador fez com que ela tornasse-se uma boxeadora profissional e tem até o momento o recorde de três vitórias e nenhuma derrota.</p>
+                <h4>Ambassadors</h4><span>Nicola Adams</span>
+                <p>Nicola Adams OBE is the UK’s most successful female boxer of all time. At the London 2012 Olympic Games she became an icon after winning her country’s first ever female boxing gold medal, a feat she repeated in 2016 in Rio de Janeiro to become the first British boxer to successfully defend their Olympic title for 92 years.</p>
+                <p>Between these Olympic victories, Nicola became Commonwealth and European Champion and was crowned World Champion in May 2016 to secure a grand slam of titles. Having won every title open to her in amateur boxing, she has since turned professional and has a current record of three wins and no defeats.</p>
                 <div class="destaque">
-                    <p>“Estou muito orgulhosa de ser Embaixadora da Luta pela Paz e apoiar essa organização fantástica com seu trabalho de realizar o potencial de jovens para prevenir a violência em suas comunidades. Tendo visitado a Luta pela paz tanto no Rio de Janeiro quanto em Londres me mostrou a real importância do trabalho que organização faz em escala global e estou muito satisfeita de ter a chance de ajudar a fazer a diferença na vida de jovens e encorajar mais jovens mulheres a fazer parte dessa organização impressionante”.</p>
+                    <p>“I am really proud to be a Fight for Peace Ambassador and support this fantastic NGO in working with young people to realise their potential and prevent violence in their communities. Having visited Fight for Peace in both Rio and London, I am well aware of the important work that the organisation does on a global scale and I am delighted to have the chance to help to make a difference to young people’s lives and encourage more young females to become a part of this impressive and life-changing organisation.”</p>
                 </div>
             </div>
         </div>

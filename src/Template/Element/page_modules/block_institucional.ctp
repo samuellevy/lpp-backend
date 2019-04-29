@@ -1,6 +1,6 @@
 <div class="institucional">
     <div class="wrapper">
-        <h4>Institucional</h4>
+        <h4>Board of Trustees</h4>
         <div class="box">
             <div class="item">
                 <span>Diretoria Luta pela Paz</span>

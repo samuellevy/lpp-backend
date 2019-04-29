@@ -1,5 +1,5 @@
 <div class="section_projects">
-    <h4>Nossos Programas</h4>
+    <h4>Our programmes</h4>
     <div class="wrapper">
         <div class="box-content"> 
             <div class="nav-box">
@@ -12,10 +12,10 @@
                 <div class="content_item" id="tabs-<?=$program->id;?>">
                     <div class="content-box">
                         <div class="item-title">
-                            <h5>Programa</h5><span><?=$program->name;?></span>
+                            <h5>Program</h5><span><?=$program->name;?></span>
                         </div>
                         <div class="item">
-                            <h5>Pilares </h5>
+                            <h5>Pillars </h5>
                             <div class="content">
                                 <?php
                                 $my_pillars = $program->pillars;
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <h5>Atuação</h5>
+                            <h5>location</h5>
                             <div class="content"><span><?=$program->atuacao;?></span></div>
                         </div>
                     </div>
