@@ -63,11 +63,11 @@ class OfficesController extends AppController
     if ($this->request->is(['patch', 'post', 'put'])) {
       $office = $this->Offices->patchEntity($office, $this->request->getData());
       
-      foreach($office->files as $key_file=>$file){
-        if($file->filename==''){
-          unset($office->files[$key_file]);
-        }
-      }
+      // foreach($office->files as $key_file=>$file){
+      //   if($file->filename==''){
+      //     unset($office->files[$key_file]);
+      //   }
+      // }
 
       if ($this->Offices->save($office)) {
         $this->Flash->success(__('Salvo com sucesso.'));
