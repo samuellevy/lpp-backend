@@ -1,6 +1,6 @@
 <div class="partners">
     <div class="wrapper">
-        <h4>Our partners</h4>
+        <h4>Nossos parceiros</h4>
         <div class="box" id="tabs">
             <div class="menu_partners">
                 <div class="item" id="global" data-id="tabs-1">
@@ -8,31 +8,31 @@
                         <?php echo $this->Html->image('Site.../images/global.png');?>
                         <span>Global</span>
                     </div>
-                    <p>Learn More<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
+                    <p>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
                 </div>
                 <div class="item" id="brasil" data-id="tabs-2">
                     <div class="media_title">
                         <?php echo $this->Html->image('Site.../images/global.png');?>
-                        <span>Brazil</span>
+                        <span>Brasil</span>
                     </div>
-                    <p>Learn More<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
+                    <p>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
                 </div>
                 <div class="item" id="reino" data-id="tabs-3">
                     <div class="media_title">
                         <?php echo $this->Html->image('Site.../images/global.png');?>
-                        <span>UK</span>
+                        <span>Reino Unido</span>
                     </div>
-                    <p>Learn More<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
+                    <p>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
                 </div>
                 <div class="item" id="internacional" data-id="tabs-4">
                     <div class="media_title">
                         <?php echo $this->Html->image('Site.../images/global.png');?>
-                        <span>International</span>
+                        <span>Internacional</span>
                     </div>
-                    <p>Learn More<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
+                    <p>Conheça<?php echo $this->Html->image('Site.../images/arrow_partners.png');?></p>
                 </div>
             </div>
-            <div class="content_partners" id="tabs-1"><span>Our global partners support our work in both Brazil and in the UK, helping make our impact as broad as possible.</span>
+            <div class="content_partners" id="tabs-1"><span>Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior.</span>
                 <div class="media">
                     <?php foreach($sponsors_global as $partner):?>
                         <?php if(isset($partner['files'][0])):?>
@@ -41,7 +41,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="content_partners" id="tabs-2"><span>Our Brazil partners support the work which is done directly at our Academy in Rio as well as programmes that we offer within Brazil.</span>
+            <div class="content_partners" id="tabs-2"><span>Os parceiros Brasil apoiam o trabalho que realizamos diretamente na Academia do Rio de Janeiro e atividades que realizamos em território nacional.</span>
                 <div class="media">
                     <?php foreach($sponsors_brasil as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==0):?>
@@ -50,7 +50,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="media">
-                    <div class="type_title">Institutional partners</div>
+                    <div class="type_title">Parcerias Institucionais</div>
                     <?php foreach($sponsors_brasil as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==1):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -58,7 +58,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="parceiros_7">
-                    <div class="type_title">Partners</div>
+                    <div class="type_title">Parceiros</div>
                     <?php foreach($sponsors_brasil as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==2):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -66,7 +66,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="parceiros_7">
-                    <div class="type_title">Suppporters</div>
+                    <div class="type_title">Apoiadores</div>
                     <?php foreach($sponsors_brasil as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==3):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -74,7 +74,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="content_partners" id="tabs-3"><span>Our UK partners support the work which is done directly at our Academy in London as well as programmes that we offer within the UK.</span>
+            <div class="content_partners" id="tabs-3"><span>Os parceiros Reino Unido apoiam o trabalho que realizamos diretamente na Academia de Londres e atividades que realizamos nesse território.</span>
                 <div class="media">
                     <?php foreach($sponsors_uk as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==0):?>
@@ -83,7 +83,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="media">
-                    <div class="type_title">Institutional partners</div>
+                    <div class="type_title">Parcerias Institucionais</div>
                     <?php foreach($sponsors_uk as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==1):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -91,7 +91,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="parceiros_7">
-                    <div class="type_title">Partners</div>
+                    <div class="type_title">Parceiros</div>
                     <?php foreach($sponsors_uk as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==2):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -107,7 +107,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="content_partners" id="tabs-4"><span>Our international partners support our work in Jamaica, South Africa and across the Fight for Peace Alliance.</span>
+            <div class="content_partners" id="tabs-4"><span>Nossos parceiros internacionais apoiam nossas atividades na Jamaica, África do Sul e com nossos parceiros treinados ao redor do mundo.</span>
                 <div class="media">
                     <?php foreach($sponsors_internacional as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==0):?>
@@ -116,7 +116,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="media">
-                    <div class="type_title">Institutional partners</div>
+                    <div class="type_title">Parcerias Institucionais</div>
                     <?php foreach($sponsors_internacional as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==1):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>
@@ -124,7 +124,7 @@
                     <?php endforeach;?>
                 </div>
                 <div class="parceiros_7">
-                    <div class="type_title">Partners</div>
+                    <div class="type_title">Parceiros</div>
                     <?php foreach($sponsors_internacional as $partner):?>
                         <?php if(isset($partner['files'][0]) && $partner->type==2):?>
                             <div class="item_media"><?php echo $this->Html->image('../uploads/files/'.$partner['files'][0]['filename'], ['class'=>'', 'data-uid'=>$partner['files'][0]['id']]);?></div>

@@ -1,16 +1,16 @@
 <div class="wrapper">
-    <h1>Contact us</h1>
+    <h1>Fale conosco</h1>
     <p>Entre em contato conosco!</p>
     <p>Faça seu comentário, dê sua sugestão e tire suas dúvidas.</p>
     <div class="container_form_map">
         <div class="contato">
             <?php echo $this->Form->create('contato', ['type'=>'file']); ?>
                 <?=$this->Flash->render(); ?>
-                <input name="name" type="text" placeholder="Name">
+                <input name="name" type="text" placeholder="Nome">
                 <input name="email" type="text" placeholder="E-mail">
                 <div class="form-pad"></div>
                 <select name="assunto">
-                    <option value="0">Select a subject</option>
+                    <option value="0">Selecione um assunto</option>
                     <option value="1">Dúvidas</option>
                     <option value="2">Sugestões</option>
                     <option value="3">Doação</option>
@@ -20,7 +20,7 @@
                 <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
                 
                 <!-- <button class="anexo">ANEXAR ARQUIVO<?php echo $this->Html->image('Site.../images/clip.png');?></button> -->
-                <button class="btn-send">Send</button>
+                <button class="btn-send">ENVIAR</button>
                 <?php //echo $this->Form->file('file', ['class'=>'form-file']);?>
             <?php echo $this->Form->end(); ?>
         </div>
@@ -34,9 +34,9 @@
             <div class="section_address">
                 <div class="address">
                     <ul>
-                        <li>Fight for Peace Academy – London<span>Woodman Street London, E16 2LS - England</span></li>
-                        <li>Safety Community Program – Kingston<span>7 Harbour Street, Kingston - Jamaica</span></li>
-                        <li>Safety Community Program – Cidade do Cabo<span>302 Salt Circle, 19 Kent Street - Cape Town, 7925 - South Africa</span></li>
+                        <li>Academia Luta pela Paz – Londres<span>Woodman Street London, E16 2LS - England</span></li>
+                        <li>Programa Comunidades Seguras – Kingston<span>7 Harbour Street, Kingston - Jamaica</span></li>
+                        <li>Programa Comunidades Seguras – Cidade do Cabo<span>302 Salt Circle, 19 Kent Street - Cape Town, 7925 - South Africa</span></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <div class="section_news">
-    <h1>Related News</h1>
+    <h1>Notícias</h1>
     <div class="box">
         <?php foreach($posts as $post):?>
         <div class="item">

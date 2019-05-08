@@ -1,6 +1,6 @@
 <div class="section_lifes">
     <div class="wrapper">
-        <h2>Champions in Life</h2>
+        <h2>Vidas Transformadas</h2>
         <div class="box">
             <?php foreach($testimonials as $testimonial):?>
             <div class="item">
@@ -15,6 +15,6 @@
                 </div>
             </div>
             <?php endforeach; ?>
-        </div><a class="btn_more" href="/nossas-conquistas">Click here for more</a>
+        </div><a class="btn_more" href="/nossas-conquistas">Acompanhe</a>
     </div>
 </div>

@@ -6,8 +6,8 @@
             </div>
             <div class="item">
                 <div class="text">
-                    <h4 class="red">Academies</h4>
-                    <p>Our Academies in Rio de Janeiro and London bring together all of Fight for Peace’s methodological elements in one place. Primary, secondary and tertiary violence prevention projects are implemented with our programmes using the Five Pillars methodology, combined with Personal Development and our Theory of Change. Our services are adapted to combine the options and influences that individuals need to deal with multi-causal problems and multiple risk factors.</p><a href="/academias">Saiba mais sobre as academias</a>
+                    <h4 class="red">Academias</h4>
+                    <p>As nossas Academias no Rio de Janeiro e em Londres combinam todas as vertentes metodológicas da organização em um único local. São implementados projetos de prevenção de violência nos níveis primário, secundário e terciário. Nossos programas utilizam a metodologia dos Cinco Pilares, combinada com Desenvolvimento Pessoal e a Teoria da Mudança. Os serviços são adaptados para combinar as opções e as influências que os indivíduos necessitam para lidar com problemas multi-causais e múltiplos fatores de risco.</p><a href="/academias">Saiba mais sobre as academias</a>
                 </div>
             </div>
         </div>
@@ -17,8 +17,8 @@
             </div>
             <div class="item">
                 <div class="text">
-                    <h4 class="blue">Fight for Peace Alliance</h4>
-                    <p>The Fight for Peace Alliance is an ongoing community of practice for organisations that have been trained in our methodology and that believe in the power of combining combat sports with education and personal development to support young people to realise their potential. Since 2011, we have trained over 160 organisations from 25 countries around the world.</p>
+                    <h4 class="blue">Aliança Luta pela Paz</h4>
+                    <p>A Aliança Luta pela Paz é uma comunidade de prática contínua para organizações que foram treinadas na nossa metodologia e que acreditam no poder de esportes de luta, educação e desenvolvimento pessoal para trazer mudanças positivas para as vidas de jovens que vivem em comunidades desfavorecidas. Desde 2011, já treinamos mais de 160 organizações em 25 países ao redor do mundo.</p>
                 </div>
             </div>
         </div>
@@ -29,8 +29,9 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Safer Communities </br>Programmes - Jamaica</h4>
-                        <p>Since 2015, Fight for Peace has been implementing a Safer Communities Programme (SCP) in Kingston, Jamaica, teaming up with with local partners, governments, international agencies, donors and the private sector to bring positive change to communities affected by crime and violence.</p>                   
+                        <h4 class="green">Programa </br>Comunidades Seguras</h4>
+                        <p>O Programa Comunidades Seguras é implementado em centros de violência urbana, onde faltam recursos básicos. Utilizamos o modelo de impacto coletivo em parceria com organizações locais, governos, agências internacionais, doadores e o setor privado, a fim de juntos trazer uma mudança positiva para aquele local. Atualmente, nossos escritórios na Cidade do Cabo, África do Sul e em Kingston, Jamaica, executam o Programa Comunidades Seguras.</p>
+                    
                     </div>
                 </div>
             </div>
@@ -40,8 +41,9 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                        <h4 class="green">Safer Communities </br>Programmes - Jamaica</h4>
-                        <p>All Safer Communities Programme activities and partnerships are aligned to a shared agenda, employ shared metrics and are based on a shared Theory of Change. Activities are delivered to all young people, aged 7-29, living in communities affected by violence, including a focus on those young people who are the most entrenched and involved in violence.</p>                  
+                        <h4 class="green">Programa Comunidades</br>Seguras - Jamaica</h4>
+                        <p>Em 2015, a Luta pela Paz começou a executar o Programa Comunidades Seguras (PCS) em Kingston, Jamaica. Por meio de uma equipe local sediada em Kingston, atuamos como uma organização de apoio, trabalhando em conjunto com atores locais para colaborar na redução da violência juvenil. Ao longo dos anos, uma série de projetos vem sendo concebida com base nos Cinco Pilares da Luta pela Paz, envolvendo mais parceiros de todos os setores. A equipe da Luta pela Paz na Jamaica atua como a organização de suporte.</p>
+                    
                     </div>
                 </div>
             </div>
@@ -51,8 +53,8 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                    <h4 class="green">Safer Communities </br>Programmes - South Africa</h4>
-                        <p>Since 2016, Fight for Peace has been implementing a Safer Communities Programme (SCP) in Cape Town, South Africa, teaming up with with local partners, governments, international agencies, donors and the private sector to bring positive change to communities affected by crime and violence.</p>
+                    <h4 class="green">Programa Comunidades</br>Seguras - Jamaica</h4>
+                        <p>O programa é aberto a todos os jovens, com idades entre 7 e 29 anos, que vivem em comunidades afetadas pela violência, mas foca naqueles jovens que estão mais envolvidos na violência. Todas as parcerias e atividades desenvolvidas nos programas da Luta pela Paz na Jamaica estão alinhadas a uma agenda comum, empregam métricas compartilhadas e são baseadas em uma Teoria da Mudança compartilhada.</p>
                     </div>
                 </div>
             </div>
@@ -62,8 +64,8 @@
                 </div>
                 <div class="item">
                     <div class="text">
-                    <h4 class="green">Safer Communities </br>Programmes - South Africa</h4>
-                        <p>All Safer Communities Programme activities and partnerships are aligned to a shared agenda, employ shared metrics and are based on a shared Theory of Change. Activities are delivered to all young people, aged 7-29, living in communities affected by violence, including a focus on those young people who are the most entrenched and involved in violence.</p>
+                    <h4 class="green">Programa Comunidades</br>Seguras - África do Sul</h4>
+                        <p>Em 2016, a Luta pela Paz começou o Programa Comunidades Seguras (PCS) na Cidade do Cabo, na África do Sul. Por meio de uma equipe local sediada na Cidade do Cabo, atuamos como uma organização de apoio, trabalhando ao lado de atores locais para colaborar na redução da violência juvenil. O programa inicia, coordena, fortalece e integra programas de redução da violência juvenil em três comunidades afetadas por gangues: Manenberg, Guguelethu e Delft.</p>
                     </div>
                 </div>
             </div>
