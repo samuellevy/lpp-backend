@@ -49,6 +49,7 @@
                     <div class="merge">pronto</div>
                 </div>
                 <div class="box-wrap">
+                    <canvas id="canvas_temp" width="530" height="531"></canvas>
                     <canvas id="canvas" width="530" height="531"></canvas>
                     <div class="work-container">
                         <div class="work-box" id="work-box">
