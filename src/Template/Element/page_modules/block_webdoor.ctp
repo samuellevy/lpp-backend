@@ -2,7 +2,6 @@
     <div class="box_slider">
     <div class="item">
             <img src="<?=$this->Url->image('Site.../images/banner_maes_lpp2.png');?>" alt="">
-            <div class="filter_bg"></div>
             <div class="wrapper">
                 <div class="conntent_text pink">
                     <h2>O Dia das Mães está chegando.</h2>
