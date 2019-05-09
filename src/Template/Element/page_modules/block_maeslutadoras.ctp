@@ -64,6 +64,9 @@
                             <img id="image-mask" src="<?=$this->Url->image('Site.../images/diadasmaes/new-mask-black.png');?>">
                             <div class="description">use a barra abaixo <br/>para ajustar a foto no cartão</div>
                         </div>
+                        <div class="rotate-btn" id="rotate">
+                            <img src="<?=$this->Url->image('Site.../images/diadasmaes/rotate.png');?>">
+                        </div>
                         <div class="box-ranger">
                             <input id="rangeSelector" type="range" min="120" max="600" value="400">
                         </div><a id="sendScene"><span>Assim!</span></a>
