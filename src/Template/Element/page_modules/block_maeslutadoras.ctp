@@ -85,15 +85,15 @@
             </section>
             <div class="box-steps">
                 <div class="steps-content">
-                    <div id="passo1">
+                    <div class="passo">
                         <p>Passo 1</p>
-                        <div class="bar" id="active"><span></span></div>
+                        <div class="bar"><span></span></div>
                     </div>
-                    <div id="passo2">
+                    <div class="passo">
                         <p>Passo 2</p>
-                        <div class="bar" id="active"><span></span></div>
+                        <div class="bar"><span></span></div>
                     </div>
-                    <div id="passo3">
+                    <div class="passo">
                         <p>Passo 3</p>
                         <div class="bar"></div>
                     </div>
