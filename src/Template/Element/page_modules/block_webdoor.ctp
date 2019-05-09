@@ -1,6 +1,12 @@
 <div class="webdoor_slider">
     <div class="box_slider">
         <div class="item">
+            <a href="https://lutapelapaz.org/maeslutadoras" target="_blank">
+                <img src="<?=$this->Url->image('Site.../images/banner_maes_lpp.png');?>" alt="">
+            </a>
+            <div class="filter_bg"></div>
+        </div>
+        <div class="item">
             <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
             <div class="filter_bg"></div>
             <div class="button-play">
