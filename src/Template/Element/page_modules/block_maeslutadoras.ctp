@@ -54,6 +54,7 @@
                     <div class="work-container">
                         <div class="work-box" id="work-box">
                             <img class="preview" id="preview" src="" alt="">
+                            <img class="photoOriginal" id="photoOriginal" src="" alt="">
                             <img class="mask" id="mask_a" src="<?=$this->Url->image('Site.../images/diadasmaes/mask-a.png');?>">
                             <img class="mask" id="mask_b" src="<?=$this->Url->image('Site.../images/diadasmaes/mask-b.png');?>">
                             <img id="mask" src="<?=$this->Url->image('Site.../images/diadasmaes/mask.png');?>">
@@ -86,19 +87,19 @@
             </section>
             <div class="box-steps">
                 <div class="steps-content">
-                    <div class="passo">
-                        <p>Passo 1</p>
-                        <div class="bar"><span></span></div>
-                    </div>
-                    <div class="passo">
-                        <p>Passo 2</p>
-                        <div class="bar"><span></span></div>
-                    </div>
-                    <div class="passo">
-                        <p>Passo 3</p>
-                        <div class="bar"></div>
-                    </div>
+                  <div class="passo" data-id="1">
+                    <p>Passo 1</p>
+                    <div class="bar"><span></span></div>
+                  </div>
+                  <div class="passo" data-id="2">
+                    <p>Passo 2</p>
+                    <div class="bar"><span></span></div>
+                  </div>
+                  <div class="passo" data-id="3">
+                    <p>Passo 3</p>
+                    <div class="bar"><span></span></div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
     </div>
