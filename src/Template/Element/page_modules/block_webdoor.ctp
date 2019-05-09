@@ -5,7 +5,7 @@
             <div class="wrapper">
                 <div class="conntent_text pink">
                     <h2>O Dia das Mães está chegando.</h2>
-                    <p>Personalize sua homenagem! mostre que sua mãe é uma verdadeira lutadora!</p><a href="https://lutapelapaz.org/maeslutadoras">Clique e faça seu cartão virtual.</a>
+                    <p>Personalize sua homenagem! mostre que sua mãe é uma verdadeira lutadora!</p><a href="https://lutapelapaz.org/maeslutadoras">Clique e faça seu cartão virtual.</a>
                 </div>
             </div>
         </div> 
