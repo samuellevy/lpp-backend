@@ -1,11 +1,14 @@
 <div class="webdoor_slider">
     <div class="box_slider">
-        <div class="item">
-            <a href="https://lutapelapaz.org/maeslutadoras" target="_blank">
-                <img src="<?=$this->Url->image('Site.../images/banner_maes_lpp.png');?>" alt="">
-            </a>
-            <div class="filter_bg"></div>
-        </div>
+    <div class="item">
+            <img src="<?=$this->Url->image('Site.../images/banner_maes_lpp2.png');?>" alt="">
+            <div class="wrapper">
+                <div class="conntent_text pink">
+                    <h2>O Dia das Mães está chegando.</h2>
+                    <p>Personalize sua homenagem! mostre que sua mãe é uma verdadeira lutadora!</p><a href="https://lutapelapaz.org/maeslutadoras">Clique e faça seu cartão virtual.</a>
+                </div>
+            </div>
+        </div> 
         <div class="item">
             <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
             <div class="filter_bg"></div>
