@@ -4,7 +4,9 @@
             <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
             <div class="filter_bg"></div>
             <div class="button-play rel">
+            <a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">
                 <img src="<?=$this->Url->image('Site.../images/banner_relatorioanual2018.jpg');?>" alt=""><span>Clique e descubra nossas maiores conquistas de 2018.</span>
+            </a>
             </div>
         </div>
         <div class="item">

@@ -25,7 +25,7 @@
                 
                 
                 <div class="slide-title"></div>
-                <h5><?=$count_documents_ra>0?'Relatórios anuais':''?></h5>
+                <h5 id="relatorios"><?=$count_documents_ra>0?'Relatórios anuais':''?></h5>
                 <div class="content slider_transparencia">
                     <?php foreach($documents as $document):?>
                     <?php if($document->category_id==2):?>
