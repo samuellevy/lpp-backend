@@ -1,11 +1,11 @@
 <div class="webdoor_slider">
     <div class="box_slider">
         <div class="item">
-            <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
+            <img src="<?=$this->Url->image('Site.../images/banner_relatorioanual2018.jpg');?>" alt="">
             <div class="filter_bg"></div>
             <div class="button-play rel">
             <a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">
-                <img src="<?=$this->Url->image('Site.../images/banner_relatorioanual2018.jpg');?>" alt=""><span>Clique e descubra nossas maiores conquistas de 2018.</span>
+                <span>Clique e descubra nossas maiores conquistas de 2018.</span>
             </a>
             </div>
         </div>
