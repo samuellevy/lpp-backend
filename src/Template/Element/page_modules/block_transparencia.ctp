@@ -1,7 +1,7 @@
 <div class="transparency">
     <div class="wrapper">
         <div class="box">
-            <h4>Transparência</h4>
+            <h4 id="relatorios">Transparência</h4>
             <div class="slide-title">
                 <h5><?=$count_documents_pe>0?'Pesquisas Externas':''?></h5>
                 <div class="content slider_transparencia">
@@ -25,7 +25,7 @@
                 
                 
                 <div class="slide-title"></div>
-                <h5 id="relatorios"><?=$count_documents_ra>0?'Relatórios anuais':''?></h5>
+                <h5><?=$count_documents_ra>0?'Relatórios anuais':''?></h5>
                 <div class="content slider_transparencia">
                     <?php foreach($documents as $document):?>
                     <?php if($document->category_id==2):?>
