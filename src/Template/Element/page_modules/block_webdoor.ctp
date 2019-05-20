@@ -1,21 +1,27 @@
 <div class="webdoor_slider">
     <div class="box_slider">
         <div class="item">
-            <img src="<?=$this->Url->image('Site.../images/banner_relatorioanual2018.jpg');?>" alt="">
+            <img src="<?=$this->Url->image('Site.../images/bannerelatorio.png');?>" alt="">
             <div class="filter_bg"></div>
-            <div class="button-play rel">
-            <a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">
-                <span>Clique e descubra nossas maiores conquistas de 2018.</span>
-            </a>
+            <div class="wrapper">
+                <div class="conntent_text right orange">
+                    <h2>Grandes histórias Grandes resultados</h2>
+                    <p>Confira nosso Relatório de Resultados 2018 e entenda como transformamos a vida de milhares de jovens.</p><a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">Veja o relatório completo</a>
+                </div> 
             </div>
         </div>
         <div class="item">
-            <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
+            <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
             <div class="filter_bg"></div>
-            <div class="button-play">
-            <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank">
-                <img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
-            </a>
+            <div class="wrapper">
+                <div class="conntent_text right green">
+                    <h2>Luta pela Paz</h2>
+                    <p>Nossa verdadeira luta é por mais oportunidade para todos os jovens do nosso programa. Nesse vídeo você pode ver um pouco do nosso trabalho na Maré e pelo mundo.</p>
+                    <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank">
+                        <img src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt=""><span>Assista ao vídeo completo</span></div>
+                    </a>
+                </div> 
+            </div>
         </div>
         <div class="item">
             <img src="<?=$this->Url->image('Site.../images/home.png');?>" alt="">
