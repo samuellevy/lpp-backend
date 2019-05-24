@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="<?=$this->Url->image('Site.../images/banner_video.png');?>" alt="">
+            <img src="<?=$this->Url->image('Site.../images/banner_video.jpg');?>" alt="">
             <div class="filter_bg"></div>
             <div class="wrapper">
                 <div class="conntent_text right green">
