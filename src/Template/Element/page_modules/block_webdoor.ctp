@@ -6,7 +6,7 @@
             <div class="wrapper">
                 <div class="conntent_text right orange">
                     <h2>Grandes histórias Grandes resultados</h2>
-                    <p>Confira nosso Relatório de Resultados 2018 e entenda como transformamos a vida de milhares de jovens.</p><a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">Veja o relatório completo</a>
+                    <p>Confira nossa Relatório Anual de 2018 e entenda como ajudamos a transformar a vida de milhares de jovens.</p><a href="https://lutapelapaz.org/nossas-conquistas#relatorios" target="_blank">Veja o relatório completo</a>
                 </div> 
             </div>
         </div>
@@ -15,8 +15,8 @@
             <div class="filter_bg"></div>
             <div class="wrapper">
                 <div class="conntent_text right green">
-                    <h2>Luta pela Paz</h2>
-                    <p>Nossa verdadeira luta é por mais oportunidade para todos os jovens do nosso programa. Nesse vídeo você pode ver um pouco do nosso trabalho na Maré e pelo mundo.</p>
+                    <h2>luta pela Paz</h2>
+                    <p>Nossa verdadeira luta é por mais oportunidade para nossas crianças e jovens. Nesse vídeo você pode ver um pouco mais do nosso trabalho na Maré e no mundo.</p>
                     <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank">
                         <span><img style="display:inline; margin-right:15px; vertical-align:middle;" src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt="">Assista ao vídeo completo</span>
                     </a>
