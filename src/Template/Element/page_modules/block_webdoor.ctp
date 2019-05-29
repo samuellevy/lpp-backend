@@ -15,7 +15,7 @@
             <div class="filter_bg"></div>
             <div class="wrapper">
                 <div class="conntent_text right green">
-                    <h2>luta pela Paz</h2>
+                    <h2>Luta pela Paz</h2>
                     <p>Nossa verdadeira luta é por mais oportunidade para nossas crianças e jovens. Nesse vídeo você pode ver um pouco mais do nosso trabalho na Maré e no mundo.</p>
                     <a href="https://www.youtube.com/watch?v=h7l2XdqLwYQ" target="_blank">
                         <span><img style="display:inline; margin-right:15px; vertical-align:middle;" src="<?=$this->Url->image('Site.../images/playbutton.png');?>" alt="">Assista ao vídeo completo</span>
