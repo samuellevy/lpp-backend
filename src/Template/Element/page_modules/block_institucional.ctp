@@ -5,7 +5,7 @@
             <div class="item">
                 <span>Diretoria Luta pela Paz</span>
                 <!-- <div class="equipe_media"> -->
-                <div class="equipe first">
+                <div class="equipe personOrder">
                     <?php foreach($team_top as $person):?>
                     <div class="person">
                         <?php if(isset($person['files'][0])):?>
