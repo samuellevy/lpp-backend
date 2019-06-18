@@ -34,7 +34,7 @@
             <div class="section_address">
                 <div class="address">
                     <ul>
-                        <li>Academia Luta pela Paz – Londres<span>Woodman Street London, E16 2LS - England</span></li>
+                        <li>Academia Luta pela Paz – Londres<span>Woodman Street London, E16 2LS - United Kingdom</span></li>
                         <li>Programa Comunidades Seguras – Kingston<span>7 Harbour Street, Kingston - Jamaica</span></li>
                         <li>Programa Comunidades Seguras – Cidade do Cabo<span>302 Salt Circle, 19 Kent Street - Cape Town, 7925 - South Africa</span></li>
                     </ul>
