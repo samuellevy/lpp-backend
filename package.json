@@ -1,9 +1,8 @@
 {
-  "name": "cedaesaude-backend",
+  "name": "3aw-backend",
   "version": "1.0.0",
   "description": "Site and content management system for Cedae Saude, written with CakePHP.",
   "main": "index.js",
-  "repository": "git@github.com:samuellevy/cedaesaude-backend.git",
   "author": "Samuel Levy",
   "license": "MIT",
   "scripts": {
@@ -12,19 +11,18 @@
     "build-manager": "cd plugins/Gerenciador && gulp build",
     "push": "git push && git push github"
   },
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-cache": "^1.0.1",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-inject": "^4.3.0",
-    "require-dir": "^0.3.2",
-    "run-sequence": "^2.2.0"
-  },
   "dependencies": {
-    "del": "^3.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "bootstrap-sass": "^3.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-inject": "^5.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "require-dir": "^1.2.0",
+    "run-sequence": "^2.2.1"
   }
 }
