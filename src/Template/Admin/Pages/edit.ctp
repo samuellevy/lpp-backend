@@ -48,57 +48,6 @@
   </section>
   <section>
     <div class="header">
-      <h4 class="title">Banners</h4>
-    </div>
-    
-    <div class="card">
-      <div class="content">  
-        <div class="row">
-          <div class="col-md-3 flex-options">
-            <label>Imagem</label>
-            <img src="http://localhost:8765/site/images/bannervideo-new.jpg" style="width: 100%;"/>
-            <?=$this->Form->control('test1', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
-          </div>
-          
-          <div class="col-md-3 flex-options">
-            <?=$this->Form->control('test2', ['class'=>'form-control', 'label'=>'Título']);?>
-            <?=$this->Form->control('test3', ['class'=>'form-control', 'label'=>'Chamada do botão']);?>
-            <?=$this->Form->control('test4', ['class'=>'form-control', 'label'=>'Url']);?>
-          </div>
-
-          <div class="col-md-6">
-            <?=$this->Form->control('test5', ['class'=>'smalleditor', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;']);?>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="content">  
-        <div class="row">
-          <div class="col-md-3 flex-options">
-            <label>Imagem</label>
-            <img src="http://localhost:8765/site/images/bannervideo-new.jpg" style="width: 100%;"/>
-            <?=$this->Form->control('test1', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
-          </div>
-          
-          <div class="col-md-3 flex-options">
-            <?=$this->Form->control('test2', ['class'=>'form-control', 'label'=>'Título']);?>
-            <?=$this->Form->control('test3', ['class'=>'form-control', 'label'=>'Chamada do botão']);?>
-            <?=$this->Form->control('test4', ['class'=>'form-control', 'label'=>'Url']);?>
-          </div>
-
-          <div class="col-md-6">
-            <?=$this->Form->control('test5', ['class'=>'smalleditor', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;']);?>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  
-  <section>
-    <div class="header">
       <h4 class="title">Módulos</h4>
     </div>
     <ul id="sortable" style="list-style:none;padding:0;">
@@ -153,24 +102,6 @@
           </div>
         </div>
       </li>
-      <?php elseif($page_component->component->type=='input-group'):?>
-      <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
-        <div class="card">
-          <div class="content">  
-            
-            <div class="row">
-              <div class="col-md-12">
-                <?=$this->Form->control('test2', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
-              </div>
-              
-              <div class="col-md-12">
-                <?=$this->Form->control('test', ['class'=>'form-control', 'label'=>'Título']);?>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </li>
       <?php endif;?>
       <?php endforeach;?>
     </ul>
@@ -178,12 +109,12 @@
   
   
   <div class="row">
-    <div class="col-md-12">
-      <div class="form-group">
-        <?= $this->Form->button(__('Salvar alterações'), ['class'=>'btn btn-info btn-fill']) ?>
+      <div class="col-md-12">
+        <div class="form-group">
+          <?= $this->Form->button(__('Salvar alterações'), ['class'=>'btn btn-info btn-fill']) ?>
+        </div>
       </div>
     </div>
-  </div>
   <?= $this->Form->end() ?>
 </div>
 </div>
