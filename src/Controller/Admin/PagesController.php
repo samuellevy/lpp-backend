@@ -91,11 +91,17 @@ class PagesController extends AppController
   }
 
   public function newedit($id = null){
-    $page = $this->Pages->get($id, ['contain' => ['PagesComponents'=>['sort'=>['sort'=>'asc']],'PagesComponents.Components']]);
+    $page = $this->Pages->get($id, ['contain' => ['PagesComponents'=>['sort'=>['sort'=>'asc']],'PagesComponents.Components','PagesComponents.Banners.Files']]);
+    // die(debug($page));
     
     if ($this->request->is(['patch', 'post', 'put'])) {
       $data = $this->request->getData();
-      $page = $this->Pages->patchEntity($page, $data);
+      // unset($data['pages_components'][1]['banners'][1]);
+      $page = $this->Pages->patchEntity($page, $data, ['associated'=>'PagesComponents.Banners.Files']);
+      // die(debug($data['pages_components'][1]['banners'][1]));
+      // die(debug($page));
+
+      // die(debug($data));
       
       //case block type on page_component
       foreach($page->pages_components as $key=>$page_component){

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <?= $this->Form->create($page) ?>
+  <?= $this->Form->create($page, ['type'=>'file']) ?>
   <section>
     <div class="header">
       <h4 class="title">Informações da página</h4>
@@ -46,53 +46,6 @@
     </div>
     <?php endif;?>
   </section>
-  <section>
-    <div class="header">
-      <h4 class="title">Banners</h4>
-    </div>
-    
-    <div class="card card-shadow">
-      <div class="content">  
-        <div class="row row-dashed">
-          <div class="col-md-3 flex-options">
-            <label>Imagem</label>
-            <img src="http://localhost:8765/site/images/bannervideo-new.jpg" style="width: 100%;"/>
-            <?=$this->Form->control('test1', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
-          </div>
-          
-          <div class="col-md-3 flex-options">
-            <?=$this->Form->control('test2', ['class'=>'form-control', 'label'=>'Título']);?>
-            <?=$this->Form->control('test3', ['class'=>'form-control', 'label'=>'Chamada do botão']);?>
-            <?=$this->Form->control('test4', ['class'=>'form-control', 'label'=>'Url']);?>
-          </div>
-
-          <div class="col-md-6">
-            <?=$this->Form->control('test5', ['class'=>'smalleditor', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;']);?>
-          </div>
-        </div>
-     
-        <div class="row row-dashed">
-          <div class="col-md-3 flex-options">
-            <label>Imagem</label>
-            <img src="http://localhost:8765/site/images/bannervideo-new.jpg" style="width: 100%;"/>
-            <?=$this->Form->control('test1', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
-          </div>
-          
-          <div class="col-md-3 flex-options">
-            <?=$this->Form->control('test2', ['class'=>'form-control', 'label'=>'Título']);?>
-            <?=$this->Form->control('test3', ['class'=>'form-control', 'label'=>'Chamada do botão']);?>
-            <?=$this->Form->control('test4', ['class'=>'form-control', 'label'=>'Url']);?>
-          </div>
-
-          <div class="col-md-6">
-            <?=$this->Form->control('test5', ['class'=>'smalleditor', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;']);?>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  
   <section>
     <div class="header">
       <h4 class="title">Módulos</h4>
@@ -149,20 +102,41 @@
           </div>
         </div>
       </li>
+      
+      
+      
+      
+      
       <?php elseif($page_component->component->type=='input-group'):?>
       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
         <div class="card card-shadow">
-          <div class="content">  
+          <div class="content">
+            <label>Banners TESTE</label>
             
-            <div class="row">
-              <div class="col-md-12">
-                <?=$this->Form->control('test2', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
+            <?php foreach($page_component->banners as $banner_key=>$banner):?>
+              <div class="row row-dashed banner-component" data-id="banner-<?=$banner->id?>">
+                <button type="button" class="close-button" data-id="banner-<?=$banner->id?>">x</button>
+                <div class="col-md-3 flex-options">
+                  <?=$this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
+                  <?=$this->Form->control('pages_components.'.$key.'.class', ['class'=>'form-control']);?>
+
+                  <label>Imagem</label>
+                  <?php echo $this->Html->image('../uploads/files/'.$banner['file']['filename'], ['class'=>'form-img', 'data-uid'=>$banner['file']['id']]);?>
+                  <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.file.filename', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
+                </div>
+                
+                <div class="col-md-3 flex-options">
+                  <?=$this->Form->hidden('pages_components.'.$key.'.banners.'.$banner_key.'.id', ['value'=>$banner->id]);?>
+                  <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.title', ['class'=>'form-control', 'label'=>'Título', 'value'=>$banner->title]);?>
+                  <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.text_button', ['class'=>'form-control', 'label'=>'Chamada do botão', 'value'=>$banner->text_button]);?>
+                  <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.url', ['class'=>'form-control', 'label'=>'Url', 'value'=>$banner->url]);?>
+                </div>
+                
+                <div class="col-md-6">
+                  <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.text', ['class'=>'smalleditor', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;', 'value'=>$banner->text]);?>
+                </div>
               </div>
-              
-              <div class="col-md-12">
-                <?=$this->Form->control('test', ['class'=>'form-control', 'label'=>'Título']);?>
-              </div>
-            </div>
+            <?php endforeach;?>
             
           </div>
         </div>

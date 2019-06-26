@@ -5,6 +5,9 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\Event\Event;
+use Cake\ORM\Entity;
+use Cake\Datasource\ConnectionManager;
 
 /**
  * PagesComponents Model
@@ -51,6 +54,12 @@ class PagesComponentsTable extends Table
           'conditions' => [
             'entity' => 'PageComponent'
           ]
+        ]);
+
+        $this->hasMany('Banners', [
+            'className' => 'Banners',
+            'foreignKey' => 'page_component_id',
+            'saveStrategy' => 'replace'
         ]);
     }
 

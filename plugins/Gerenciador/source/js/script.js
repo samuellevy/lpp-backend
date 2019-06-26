@@ -52,6 +52,14 @@ $(document).ready(function() {
             customConfig: "./small.js"
         });
     });
+
+    // delete a banner
+    $(".close-button").click(function() {
+        const id = $(this).attr("data-id");
+        $(`.banner-component[data-id="${id}"]`)
+            .fadeOut()
+            .remove();
+    });
 });
 
 function removeFileFromServer(id) {
