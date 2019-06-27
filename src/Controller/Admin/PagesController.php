@@ -51,46 +51,6 @@ class PagesController extends AppController
   }
   
   public function edit($id = null){
-    $page = $this->Pages->get($id, ['contain' => ['PagesComponents'=>['sort'=>['sort'=>'asc']],'PagesComponents.Components']]);
-    
-    if ($this->request->is(['patch', 'post', 'put'])) {
-      $data = $this->request->getData();
-      $page = $this->Pages->patchEntity($page, $data);
-      
-      //case block type on page_component
-      foreach($page->pages_components as $key=>$page_component){
-        if(isset($page_component->breaked_content)){
-          $page->pages_components[$key]->content = '';
-          foreach($page_component->breaked_content as $br_key=>$breaked_content){
-            $page->pages_components[$key]->content .= $breaked_content;
-            if($br_key < count($page_component->breaked_content)-1){
-              $page->pages_components[$key]->content .= ',';
-            }
-          }
-        }
-      }
-      
-      if ($this->Pages->save($page)) {
-        $this->Flash->success(__('Salvo com sucesso.'));
-        
-        return $this->redirect(['action' => 'index']);
-      }
-      $this->Flash->error(__('Não pôde ser salvo.'));
-    }
-    $this->set(compact('page'));
-    $this->set('_serialize', ['page']);
-    
-    $this->loadModel('Posts');
-    $posts = $this->Posts->find('all', ['order'=>'created DESC']);
-    $posts_list = [];
-    
-    foreach($posts as $post){
-      $posts_list[$post->id] = '#'.$post->id.' - '.$post->title;
-    }
-    $this->set(compact('posts_list'));
-  }
-
-  public function newedit($id = null){
     $page = $this->Pages->get($id, ['contain' => ['PagesComponents'=>['sort'=>['sort'=>'asc']],'PagesComponents.Components','PagesComponents.Banners.Files']]);
     // die(debug($page));
     
