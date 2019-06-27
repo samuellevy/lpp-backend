@@ -17,6 +17,7 @@ class PagesController extends AppController
 					'conditions'=>['status'=>1]
 				],
 				'PagesComponents.Components',
+				'PagesComponents.Banners.Files'
 			]
 		]);
 		$page = $page->first();

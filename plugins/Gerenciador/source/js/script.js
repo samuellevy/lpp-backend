@@ -69,6 +69,7 @@ $(document).ready(function() {
 });
 
 function createBanner(component) {
+    console.log(component);
     let count_banners = $(`.banner-component[data-component="${component}"]`)
         .length;
     let boilerplate = $(".boilerplate").html();

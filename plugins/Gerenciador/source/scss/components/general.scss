@@ -126,3 +126,8 @@ section div.card div.content div.row div.flex-options {
 .boilerplate {
     display: none;
 }
+
+.scaled-img {
+    object-fit: contain;
+    max-height: 200px;
+}

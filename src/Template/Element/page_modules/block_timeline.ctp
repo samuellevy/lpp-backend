@@ -1,8 +1,4 @@
 <div class="timeline">
-    <div class="wrapper">
-        <h4>Nossa trajetória</h4>
-        <p>Fundada em 2000, pelo antropólogo e ex-boxeador inglês Luke Dowdney, a Luta pela Paz vem crescendo local e globalmente, buscando oferecer suporte e apoio necessário para auxiliar jovens a romper barreiras e alcançar a paz em suas comunidades. Acompanhe abaixo a evolução do nosso trabalho e os momentos mais marcantes da nossa trajetória.</p>
-    </div>
     <div class="box">
         <div class="wrapper">
             <div class="slider">
