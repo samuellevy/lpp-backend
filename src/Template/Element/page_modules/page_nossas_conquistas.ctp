@@ -23,7 +23,7 @@
 </div>
 <div class="section_lifetransform">
     <div class="wrapper">
-        <h3>Vidas Transformadas</h3>
+        <h3><?=__("Vidas Transformadas");?></h3>
         <?php foreach($testimonials as $key=>$testimonial):?>
         <div class="box <?=($key+1)%2==0?'inverter':''?>">
             <div class="item">

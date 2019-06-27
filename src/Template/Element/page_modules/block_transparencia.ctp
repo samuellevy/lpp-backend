@@ -37,7 +37,7 @@
                             </div>
                             <div class="date">
                                 <span><?=$document->reference;?></span>
-                                <a href="<?=$this->Url->image('../documents/'.$document['files'][0]['filename']);?>" target="_blank">Ver<img src="<?=$this->Url->image('Site.../images/arrow.png')?>" alt=""></a>
+                                <a href="<?=$this->Url->image('../documents/'.$document['files'][0]['filename']);?>" target="_blank"><?=__("Ver");?><img src="<?=$this->Url->image('Site.../images/arrow.png')?>" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="date">
                                 <span><?=$document->reference;?></span>
-                                <a href="<?=$this->Url->image('../documents/'.$document['files'][0]['filename']);?>" target="_blank">Ver<img src="<?=$this->Url->image('Site.../images/arrow.png')?>" alt=""></a>
+                                <a href="<?=$this->Url->image('../documents/'.$document['files'][0]['filename']);?>" target="_blank"><?=__("Ver");?><img src="<?=$this->Url->image('Site.../images/arrow.png')?>" alt=""></a>
                             </div>
                         </div>
                     </div>

@@ -59,7 +59,9 @@
                         <p style="background-color: transparent;">
                             <?=$component->banners[0]->text;?>
                         </p>
-                        <a href="<?=$component->banners[0]->url;?>" target="_blank" class="<?=$component->banners[0]->class;?>"><?=$component->banners[0]->text_button;?></a>
+                        <?php if($component->banners[0]->url != ""):?>
+                            <a href="<?=$component->banners[0]->url;?>" target="_blank" class="<?=$component->banners[0]->class;?>"><?=$component->banners[0]->text_button;?></a>
+                        <?php endif;?>
                     </div>
                 </div>
             </div>
@@ -73,7 +75,10 @@
                         <div class="wrapper">
                             <div class="conntent_text right <?=$banner->class;?>">
                                 <h2><?=$banner->title;?></h2>
-                                <p><?=$banner->text;?></p><a href="<?=$banner->url?>" target="_blank"><?=$banner->text_button?></a>
+                                <p><?=$banner->text;?></p>
+                                <?php if($banner->url != ""):?>
+                                    <a href="<?=$banner->url?>" target="_blank"><?=$banner->text_button?></a>
+                                <?php endif;?>
                             </div> 
                         </div>
                     </div>

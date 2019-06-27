@@ -27,8 +27,8 @@
             </div>
             <div class="box">
                 <div class="div-strong-dark-blue">
-                    <p class="color-white">Você faz parte de uma organização filiada à Aliança Luta Pela Paz? Faça seu login e acesse nossa rede! :)</p><br>
-                    <a href="https://fightforpeace.filecamp.com/" class="btn-dark-blue">ACESSAR ALIANÇA LPP</a>
+                    <p class="color-white"><?=__("Você faz parte de uma organização filiada à Aliança Luta Pela Paz? Faça seu login e acesse nossa rede! :)");?></p><br>
+                    <a href="https://fightforpeace.filecamp.com/" class="btn-dark-blue"><?=__("ACESSAR ALIANÇA LPP");?></a>
                 </div>
             </div>
         </div>

@@ -1,2 +1,124 @@
+# Home
+msgid "Vidas Transformadas"
+msgstr "Champions in life"
+
+msgid "Acompanhe"
+msgstr "READ MORE"
+
+msgid "acompanhe nossas conquistas"
+msgstr "CLICK HERE FOR MORE RESULTS"
+
+msgid "Notícias"
+msgstr "Related News"
+
+msgid "Não perca nada que acontece na Luta pela Paz."
+msgstr "Stay Connected. Add your name and email address to confirm that you would like us to keep you informed about the work we do, our events and fundraising. (For full information on how we use and securely store your data, please see our Privacy Policy.)"
+
 msgid "Nome"
-msgstr "Name"
+msgstr "First name"
+
+msgid "SAIBA MAIS"
+msgstr "READ MORE"
+
+msgid "enviar"
+msgstr "Subscribe"
+
+msgid "Você faz parte de uma organização filiada à Aliança Luta Pela Paz? Faça seu login e acesse nossa rede! :)"
+msgstr "Are you part of the Fight for Peace Alliance? Login here to access our Toolkit."
+
+msgid "ACESSAR ALIANÇA LPP"
+msgstr "ALLIANCE ACCESS"
+
+# Quem somos
+msgid "Nossos parceiros"
+msgstr "Our partners"
+
+msgid "Conheça"
+msgstr "LEARN MORE"
+
+msgid "Nossos parceiros globais apoiam nosso trabalho tanto no Brasil quanto no Reino Unido, fazendo nosso impacto ainda maior."
+msgstr "Our global partners support our work in both Brazil and in the UK, helping make our impact as broad as possible."
+
+msgid "Brasil"
+msgstr "Brazil"
+
+msgid "Reino Unido"
+msgstr "UK"
+
+msgid "Internacional"
+msgstr "International"
+
+msgid "Os parceiros Brasil apoiam o trabalho que realizamos diretamente na Academia do Rio de Janeiro e atividades que realizamos em território nacional."
+msgstr "Our Brazil partners support the work which is done directly at our Academy in Rio as well as programmes that we offer within Brazil."
+
+msgid "Nossos parceiros internacionais apoiam nossas atividades na Jamaica, África do Sul e com nossos parceiros treinados ao redor do mundo."
+msgstr "Our international partners support our work in Jamaica, South Africa and across the Fight for Peace Alliance."
+
+msgid "Nossos Programas"
+msgstr "Our programmes"
+
+msgid "Fale conosco"
+msgstr "Contact us"
+
+msgid "Entre em contato conosco!"
+msgstr "Get in touch with us!"
+
+msgid "Faça seu comentário, dê sua sugestão e tire suas dúvidas."
+msgstr "Leave your feedback, make a suggestion and send us your queries."
+
+msgid "Parcerias Institucionais"
+msgstr "Institutional Partners"
+
+msgid "Parceiros"
+msgstr "Partners"
+
+msgid "Apoiadores"
+msgstr "Supporters"
+
+msgid "Transparência"
+msgstr "Transparency"
+
+msgid "Pesquisas Externas"
+msgstr "External Research"
+
+msgid "Relatórios anuais"
+msgstr "Annual Reports"
+
+msgid "Auditorias"
+msgstr "Financial Audits"
+
+msgid "Ver"
+msgstr "Open"
+
+
+msgid "Selecione um assunto"
+msgstr "Select a subject"
+
+msgid "Dúvidas"
+msgstr "Doubts"
+
+msgid "Sugestões"
+msgstr "Suggestions"
+
+msgid "Doação"
+msgstr "Donation"
+
+msgid "Parcerias"
+msgstr "Partnerships"
+
+msgid "Escreva sua mensagem"
+msgstr "Leave your message here"
+
+msgid "Academia Luta pela Paz - Rio de Janeiro"
+msgstr "Fight for Peace Academy – Rio de Janeiro"
+
+msgid "Academia Luta pela Paz – Londres"
+msgstr "Fight for Peace Academy – London"
+
+msgid "Programa Comunidades Seguras – Kingston"
+msgstr "Safer Communities Programme - Jamaica"
+
+msgid "Programa Comunidades Seguras – Cidade do Cabo"
+msgstr "Safer Communities Programme - Cape Town"
+
+
