@@ -1,6 +1,6 @@
 <div class="section_lifes">
     <div class="wrapper">
-        <h2>Vidas Transformadas</h2>
+        <h2><?=__('Vidas Transformadas');?></h2>
         <div class="box">
             <?php foreach($testimonials as $testimonial):?>
             <div class="item">

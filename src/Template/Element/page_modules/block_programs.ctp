@@ -1,5 +1,5 @@
 <div class="section_projects">
-    <h4>Nossos Programas</h4>
+    <h4><?=__("Nossos Programas");?></h4>
     <div class="wrapper">
         <div class="box-content"> 
             <div class="nav-box">
@@ -12,10 +12,10 @@
                 <div class="content_item" id="tabs-<?=$program->id;?>">
                     <div class="content-box">
                         <div class="item-title">
-                            <h5>Programa</h5><span><?=$program->name;?></span>
+                            <h5><?=__("Programa");?></h5><span><?=__($program->name);?></span>
                         </div>
                         <div class="item">
-                            <h5>Pilares </h5>
+                            <h5><?=__("Pilares");?> </h5>
                             <div class="content">
                                 <?php
                                 $my_pillars = $program->pillars;
@@ -33,8 +33,8 @@
                             </div>
                         </div>
                         <div class="item">
-                            <h5>Atuação</h5>
-                            <div class="content"><span><?=$program->atuacao;?></span></div>
+                            <h5><?=__("Atuação");?></h5>
+                            <div class="content"><span><?=__($program->atuacao);?></span></div>
                         </div>
                     </div>
                     <div class="border"></div>
@@ -45,7 +45,7 @@
                         <?php endif;?>
                         </div>
                         <div class="text">
-                            <?=$program->content;?>
+                            <?=__($program->content);?>
                         </div>
                     </div>
                 </div>

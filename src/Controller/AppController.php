@@ -3,10 +3,12 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
 
 class AppController extends Controller
 {
     public function initialize(){
+        // I18n::locale('en_US');    
         parent::initialize();
 
         $this->loadComponent('RequestHandler', [

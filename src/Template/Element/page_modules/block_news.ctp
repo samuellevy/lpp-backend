@@ -1,5 +1,5 @@
 <div class="section_news">
-    <h1>Notícias</h1>
+    <h1><?=__("Notícias");?></h1>
     <div class="box">
         <?php foreach($posts as $post):?>
         <div class="item">
@@ -11,7 +11,7 @@
                     <div class="square square-red"></div><span class="color-red"><?=$post->blog_category->category;?></span>
                 </div>
                 <h3 class="color-navy-blue"><?=$post->title;?></h3>
-                <a href="/ler/<?=$post->slug;?>"><p class="color-light-grey"><?=$post->description;?></p><span class="color-red">SAIBA MAIS ></span></a>
+                <a href="/ler/<?=$post->slug;?>"><p class="color-light-grey"><?=$post->description;?></p><span class="color-red"><?=__("SAIBA MAIS>");?></span></a>
             </div>
         </div>
         <?php endforeach;?>

@@ -7,15 +7,15 @@
                         <?php if(isset($program['files'][0])):?>
                             <?php echo $this->Html->image('../uploads/files/'.$program['files'][0]['filename']);?>
                         <?php endif;?>
-                        <div class="overlay"></div><span>Atletas da paz</span>
+                        <div class="overlay"></div><span><?=__("Atletas da paz");?></span>
                     </div>
                     <div class="item-content" id="tabs-<?=$program->id;?>">
                         <div class="title">
-                            <h5>Programa</h5><span><?=$program->name;?></span>
+                            <h5><?=__("Programa");?></h5><span><?=__($program->name);?></span>
                         </div>
                         <div class="description">
                             <div class="pillars">
-                                <h5>Pilares</h5>
+                                <h5><?=__("Pilares");?></h5>
                                 <?php
                                 $my_pillars = $program->pillars;
                                 $my_pillars = explode(',',$my_pillars);
@@ -30,11 +30,11 @@
                                 ?>
                             </div>
                             <div class="location">
-                                <h5>Atuação</h5><span><?=$program->atuacao;?></span>
+                                <h5><?=__("Atuação");?></h5><span><?=__($program->atuacao);?></span>
                             </div>
                         </div>
                         <div class="article-box">
-                            <?=$program->content;?>
+                            <?=__($program->content);?>
                         </div>
                     </div>
                 </div>

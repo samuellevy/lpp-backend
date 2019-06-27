@@ -17,7 +17,7 @@
                             <div class="bar" style="<?=isset($event['files'][0])?'':'background-color: transparent;';?>"></div>
                             <div class="text">
                                 <h5><?=$key==0?$event->year:'';?></h5>
-                                <p><?=$event->description;?></p>
+                                <p><?=__($event->description);?></p>
                             </div>
                         </div>
                         <?php $qtd_event++;?>

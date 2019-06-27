@@ -1,9 +1,9 @@
 <div class="institucional">
     <div class="wrapper">
-        <h4>Institucional</h4>
+        <h4><?=__("Institucional");?></h4>
         <div class="box">
             <div class="item">
-                <span>Diretoria Luta pela Paz</span>
+                <span><?=__("Diretoria Luta pela Paz");?></span>
                 <!-- <div class="equipe_media"> -->
                 <div class="equipe personOrder">
                     <?php foreach($team_top as $person):?>
@@ -18,7 +18,7 @@
                     </div>
                     <?php endforeach;?>
                 </div>
-                <span>Conselho Fiscal Luta pela Paz</span>
+                <span><?=__("Conselho Fiscal Luta pela Paz");?></span>
                 
                 <div class="equipe">
                     <?php foreach($team_mid as $person):?>
@@ -29,7 +29,7 @@
                     <?php endforeach;?>
                 </div>
             </div>
-            <div class="item"><span>Conselho Consultivo Luta pela Paz</span>
+            <div class="item"><span><?=__("Conselho Consultivo Luta pela Paz");?></span>
                 <div class="equipe">
                     <?php foreach($team_bot as $person):?>
                     <div class="person">
