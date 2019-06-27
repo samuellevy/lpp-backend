@@ -97,11 +97,21 @@ class PagesController extends AppController
     if ($this->request->is(['patch', 'post', 'put'])) {
       $data = $this->request->getData();
       // unset($data['pages_components'][1]['banners'][1]);
+      foreach($data['pages_components'] as $key=>$component){
+        if(array_key_exists('banners', $component)){
+          foreach($component['banners'] as $b_key=>$banner){
+            if($banner['file']['filename']['tmp_name'] == ''){
+              unset($data['pages_components'][$key]['banners'][$b_key]['file']);
+            }
+          }
+        }
+      }
+      // die(debug($data));
       $page = $this->Pages->patchEntity($page, $data, ['associated'=>'PagesComponents.Banners.Files']);
       // die(debug($data['pages_components'][1]['banners'][1]));
       // die(debug($page));
 
-      // die(debug($data));
+
       
       //case block type on page_component
       foreach($page->pages_components as $key=>$page_component){

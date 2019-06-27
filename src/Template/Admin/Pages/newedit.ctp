@@ -110,19 +110,44 @@
       <?php elseif($page_component->component->type=='input-group'):?>
       <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
         <div class="card card-shadow">
-          <div class="content">
+          <div class="content banner-content" data-component="<?=$key?>">
             <label>Banners TESTE</label>
             
+            <div class="boilerplate">
+              <div class="row row-dashed banner-component-boilerplate" data-id="banner-{banner_id}" data-component="<?=$key?>">
+                  <button type="button" class="close-button" data-id="banner-{banner_id}">x</button>
+                  <div class="col-md-3 flex-options">
+                    <?=$this->Form->hidden('pages_components_boilerplate.{key}.id', ['class'=>'form-control', 'value'=>$page_component->id]);?>
+
+                    <label>Imagem</label>
+                    <img src="http://via.placeholder.com/290x130" alt="" class="form-img"/>
+                    <?=$this->Form->control('pages_components_boilerplate.{key}.banners.{banner_key}.file.filename', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
+                    <?=$this->Form->hidden('pages_components_boilerplate.{key}.banners.{banner_key}.file.entity', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file', 'value'=>'Banner']);?>
+                  </div>
+                  
+                  <div class="col-md-3 flex-options">
+                    <?=$this->Form->control('pages_components_boilerplate.{key}.banners.{banner_key}.title', ['class'=>'form-control', 'label'=>'Título']);?>
+                    <?=$this->Form->control('pages_components_boilerplate.{key}.banners.{banner_key}.text_button', ['class'=>'form-control', 'label'=>'Chamada do botão']);?>
+                    <?=$this->Form->control('pages_components_boilerplate.{key}.banners.{banner_key}.url', ['class'=>'form-control', 'label'=>'Url']);?>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <?=$this->Form->control('pages_components_boilerplate.{key}.banners.{banner_key}.text', ['class'=>'smalleditor_new', 'label'=>'Texto', 'type'=>'textarea', 'style'=>'width: 100%;', 'value'=>'']);?>
+                  </div>
+                </div>
+            </div>
+
+
             <?php foreach($page_component->banners as $banner_key=>$banner):?>
-              <div class="row row-dashed banner-component" data-id="banner-<?=$banner->id?>">
+              <div class="row row-dashed banner-component" data-id="banner-<?=$banner->id?>" data-component="<?=$key?>">
                 <button type="button" class="close-button" data-id="banner-<?=$banner->id?>">x</button>
                 <div class="col-md-3 flex-options">
                   <?=$this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
-                  <?=$this->Form->control('pages_components.'.$key.'.class', ['class'=>'form-control']);?>
 
                   <label>Imagem</label>
                   <?php echo $this->Html->image('../uploads/files/'.$banner['file']['filename'], ['class'=>'form-img', 'data-uid'=>$banner['file']['id']]);?>
                   <?=$this->Form->control('pages_components.'.$key.'.banners.'.$banner_key.'.file.filename', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file']);?>
+                  <?=$this->Form->hidden('pages_components.'.$key.'.banners.'.$banner_key.'.file.entity', ['class'=>'', 'label'=>'Arquivo', 'type'=>'file', 'value'=>'Banner']);?>
                 </div>
                 
                 <div class="col-md-3 flex-options">
@@ -139,6 +164,7 @@
             <?php endforeach;?>
             
           </div>
+          <button class="add_banner btn btn-fill" type="button" data-component="<?=$key?>">Adicionar banner</button>
         </div>
       </li>
       <?php endif;?>

@@ -54,22 +54,44 @@ $(document).ready(function() {
     });
 
     // delete a banner
-    $(".close-button").click(function() {
+    $(document).on("click", ".close-button", function() {
         const id = $(this).attr("data-id");
+        console.log(id);
         $(`.banner-component[data-id="${id}"]`)
             .fadeOut()
             .remove();
     });
+
+    $(document).on("click", ".add_banner", function() {
+        const id = $(this).attr("data-component");
+        createBanner(id);
+    });
 });
 
-function removeFileFromServer(id) {
-    var responder = "";
-    $.ajax({
-        url: "./public/delete_file/" + id,
-        cache: false
-    }).done(function(html) {
-        responder = html;
-    });
+function createBanner(component) {
+    let count_banners = $(`.banner-component[data-component="${component}"]`)
+        .length;
+    let boilerplate = $(".boilerplate").html();
+    let random_id = Math.floor(Math.random() * 26) + Date.now();
+    boilerplate = boilerplate.replace(
+        /banner-component-boilerplate/g,
+        "banner-component"
+    );
+    boilerplate = boilerplate.replace(
+        /pages_components_boilerplate/g,
+        "pages_components"
+    );
+    boilerplate = boilerplate.replace(/{banner_id}/g, random_id);
+    boilerplate = boilerplate.replace(/{key}/g, component);
+    boilerplate = boilerplate.replace(/{banner_key}/g, count_banners);
+    $(`.banner-content[data-component="${component}"]`).append(boilerplate);
+
+    /** colocar ckeditor */
+    // CKEDITOR.replace(textarea, {
+    //     height: 120,
+    //     /* Default CKEditor styles are included as well to avoid copying default styles. */
+    //     customConfig: "./small.js"
+    // });
 }
 
 function changeStatus(model, field, id) {
