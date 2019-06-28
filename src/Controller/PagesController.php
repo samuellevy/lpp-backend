@@ -63,20 +63,13 @@ class PagesController extends AppController
 				$this->set(compact('timeline'));
 				// die(debug($timeline));
 
-				$this->loadModel('Team');
-				$team_top = $this->Team->find('all', [
-					'contain'=>['Files'],
-					'conditions'=>['position'=>'top']
-				])->all();
-				$team_mid = $this->Team->find('all', [
-					'contain'=>['Files'],
-					'conditions'=>['position'=>'bottom']
-				])->all();
-				$team_bot = $this->Team->find('all', [
-					'contain'=>['Files'],
-					'conditions'=>['position'=>'both']
-				])->all();
-				$this->set(compact('team_top','team_mid','team_bot'));
+				$this->loadModel('TeamPositions');
+				$positions = $this->TeamPositions->find('all', [
+					'contain'=>['Team.Files']
+				])->all()->toArray();
+
+				// die(debug($positions));
+				$this->set(compact('positions'));
 
 				$this->loadModel('Sponsors');
 				$sponsors_global = $this->Sponsors->find('all', [
