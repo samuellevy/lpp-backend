@@ -54,6 +54,7 @@ class PagesController extends AppController
 				//Instagram
 				// $pictures = $this->Instagram->getPics();
 			break;
+			case 'about-us':
 			case 'quem-somos':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -95,6 +96,7 @@ class PagesController extends AppController
 				// die(debug($sponsors_brasil));
 			break;
 
+			case 'what-we-do':
 			case 'o-que-fazemos':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -104,6 +106,7 @@ class PagesController extends AppController
 				$this->set(compact('offices'));
 			break;
 
+			case 'academies':
 			case 'academias':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -117,6 +120,7 @@ class PagesController extends AppController
 				$this->set(compact('pillars'));
 			break;
 
+			case 'get-involved':
 			case 'como-colaborar':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -126,6 +130,7 @@ class PagesController extends AppController
 				}
 			break;
 			
+			case 'contact-us':
 			case 'fale-conosco':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));
@@ -135,6 +140,7 @@ class PagesController extends AppController
 				}
 			break;
 
+			case 'our-results':
 			case 'nossas-conquistas':
 				$conf_active = 'always_active';
 				$this->set(compact('conf_active'));

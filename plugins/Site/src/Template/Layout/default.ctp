@@ -9,7 +9,7 @@
   <?= $this->Html->script('main.js?'.uniqid(rand(), true)) ?>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
-  <title>Luta Pela Paz</title>
+  <title><?=__("Luta Pela Paz");?></title>
   
   <meta property="og:url"           content="http://fightforpeace.net/pt-br/" />
   <meta property="og:type"          content="website" />

@@ -1,3 +1,6 @@
+msgid "Luta Pela Paz"
+msgstr "Fight for Peace"
+
 # Home
 msgid "Vidas Transformadas"
 msgstr "Champions in life"
