@@ -13,8 +13,8 @@
             <h1><?=$post->title;?></h1>
             <p><?=$post->description;?></p>
             <div class="content_links">
-                <div class="publicado"><span>Publicado em <?=$post->created;?></span></div>
-                <div class="media"><span>Compartilhe:</span>
+                <div class="publicado"><span><?=__("Publicado em");?> <?=$post->created;?></span></div>
+                <div class="media"><span><?=__("Compartilhe");?>:</span>
                     <div class="twitter">
                         <?php echo $this->Html->image('Site.../images/twitter_news.png');?>
                         <a onclick="window.open('http://twitter.com/share?text=<?=$post->description;?>&url=<?=$this->Url->build('/ler/'.$post->slug, true);?>&hashtags=#FightForPeace','popUpWindow','height=500,width=600,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no, status=yes');">Twitter</a>
@@ -32,7 +32,7 @@
             <div class="content_text">
                 <p><?=$post->content;?></p>
                 <div class="content_links-bottom">
-                    <div class="media"><span>Compartilhe:</span>
+                    <div class="media"><span><?=__("Compartilhe")?>:</span>
                         <div class="twitter">
                             <?php echo $this->Html->image('Site.../images/twitter_news.png');?>
                             <a onclick="window.open('http://twitter.com/share?text=<?=$post->description;?>&url=<?=$this->Url->build('/ler/'.$post->slug, true);?>&hashtags=#FightForPeace','popUpWindow','height=500,width=600,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no, status=yes');">Twitter</a>

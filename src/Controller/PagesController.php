@@ -41,6 +41,12 @@ class PagesController extends AppController
 				$posts = $this->Posts->find('all', ['contain'=>['Files','BlogCategories'], 'limit'=>4, 'order'=>['created'=>'DESC']])->all();
 				$this->set(compact('posts'));
 
+				$this->loadModel('Numbers');
+				$numbers = $this->Numbers->find('all', ['contain'=>['Desktop', 'Mobile']])->all()->toArray();
+				$this->set(compact('numbers'));
+
+				// die(debug($numbers[0]));
+
 				if ($this->request->is('post')) {
 					$this->contact($this->request->getData());
 				}
@@ -143,6 +149,12 @@ class PagesController extends AppController
 				$this->loadModel('Testimonials');
 				$testimonials = $this->Testimonials->find('all', ['contain'=>'Files']);
 				$this->set(compact('testimonials'));
+
+				$this->loadModel('Numbers');
+				$numbers = $this->Numbers->find('all', ['contain'=>['Desktop', 'Mobile']])->all()->toArray();
+				$this->set(compact('numbers'));
+
+				// die(debug($numbers[0]->desktop[0]->filename));
 				
 				$this->loadModel('Documents');
 				$documents = $this->Documents->find('all', ['contain'=>'Files']);

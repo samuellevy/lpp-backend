@@ -2,21 +2,21 @@
     <div class="box">
         <div class="destaque">
             <div class="first">
-                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_1.png');?></div>
+                <div class="media"><?=$this->Html->image('../uploads/files/'.$numbers[0]->desktop[0]->filename, ['class'=>'scaled-img', 'data-uid'=>$numbers[0]->desktop[0]->id]);?></div>
             </div>
         </div>
         <div class="display">
             <div class="second">
-                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_2.png');?></div>
+                <div class="media"><?=$this->Html->image('../uploads/files/'.$numbers[1]->desktop[0]->filename, ['class'=>'scaled-img', 'data-uid'=>$numbers[0]->desktop[0]->id]);?></div>
             </div>
             <div class="third">
-                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_3.png');?></div>
+                <div class="media"><?=$this->Html->image('../uploads/files/'.$numbers[2]->desktop[0]->filename, ['class'=>'scaled-img', 'data-uid'=>$numbers[0]->desktop[0]->id]);?></div>
             </div>
             <div class="quarter">
-                <div class="media"><?php echo $this->Html->image('Site.../images/numbers_4.png');?></div>
+                <div class="media"><?=$this->Html->image('../uploads/files/'.$numbers[3]->desktop[0]->filename, ['class'=>'scaled-img', 'data-uid'=>$numbers[0]->desktop[0]->id]);?></div>
             </div>
             <div class="fifth">
-                <div class="media"></div><?php echo $this->Html->image('Site.../images/numbers_5.png');?>
+                <div class="media"><?=$this->Html->image('../uploads/files/'.$numbers[4]->desktop[0]->filename, ['class'=>'scaled-img', 'data-uid'=>$numbers[0]->desktop[0]->id]);?></div>
             </div>
         </div>
     </div>

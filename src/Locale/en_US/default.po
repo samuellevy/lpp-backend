@@ -121,4 +121,10 @@ msgstr "Safer Communities Programme - Jamaica"
 msgid "Programa Comunidades Seguras – Cidade do Cabo"
 msgstr "Safer Communities Programme - Cape Town"
 
+msgid "Publicado em"
+msgstr "Published"
+
+msgid "Compartilhe"
+msgstr "Share"
+
 
