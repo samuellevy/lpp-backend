@@ -63,60 +63,73 @@ $(document).ready(function() {
     });
 
     $(document).on("click", ".add_banner", function() {
-        const id = $(this).attr("data-component");
-        createBanner(id);
+        const module_id = $(this).attr("module-id");
+        const module_key = $(this).attr("module-key");
+
+        const banner_key = $(`.banner-component[module-id=${module_id}]`)
+            .length;
+
+        createBanner(module_id, module_key, banner_key);
+        console.log(banner_key);
     });
 });
 
-function createBanner(component) {
-    console.log(component);
+function createBanner(module_id, module_key, banner_key) {
+    // console.log(component);
+    const module = $("li.module").length;
 
     let banner = `
-    <div class="row row-dashed banner-component" data-id="banner-4" data-component="1">
+    <div class="row row-dashed banner-component" data-id="banner-4" module-id="${module_id}">
         <button type="button" class="close-button" data-id="banner-4">x</button>
         <div class="col-md-3 flex-options">
             <label>Imagem</label>
-            <img src="/img/../uploads/files/0b0aad53-7756-4e22-8180-4bc8fbf78d4e.png" class="scaled-img" data-uid="439" alt="">
+            <img src="https://via.placeholder.com/360X165/C2C2C2/808080/?text=Selecione%20a%20imagem" class="scaled-img" data-uid="439" alt="">
             <div class="input file">
-                <label for="pages-components-0-banners-2-file-filename">Arquivo</label>
-                <input type="file" name="pages_components[3][banners][0][file][filename]" class="" id="pages-components-0-banners-2-file-filename">
+                <label for="pages-components-${module_key}-banners-${banner_key}-file-filename">Arquivo</label>
+                <input type="file" name="pages_components[${module_key}][banners][${banner_key}][file][filename]" class="" id="pages-components-${module_key}-banners-${banner_key}-file-filename">
             </div>
-            <input type="hidden" name="pages_components[3][banners][0][file][entity]" class="" label="Arquivo" value="Banner">
+            <input type="hidden" name="pages_components[${module_key}][banners][${banner_key}][file][entity]" class="" label="Arquivo" value="Banner">
         </div>
 
         <div class="col-md-3 flex-options">
-            <input type="hidden" name="pages_components[3][banners][0][page_component_id]" value="4">
             <div class="input text">
-                <label for="pages-components-0-banners-2-title">Título</label>
-                <input type="text" name="pages_components[3][banners][0][title]" class="form-control" maxlength="255" id="pages-components-0-banners-2-title" value="Fighting for a world with more peace, equality and solidarity">
+                <label for="pages-components-${module_key}-banners-${banner_key}-title">Título</label>
+                <input type="text" name="pages_components[${module_key}][banners][${banner_key}][title]" class="form-control" maxlength="255" id="pages-components-${module_key}-banners-${banner_key}-title" value="">
             </div>
             <div class="input text">
-                <label for="pages-components-0-banners-2-text-button">Chamada do botão</label>
-                <input type="text" name="pages_components[3][banners][0][text_button]" class="form-control" maxlength="255" id="pages-components-0-banners-2-text-button" value="JOIN THE FIGHT">
+                <label for="pages-components-${module_key}-banners-${banner_key}-text-button">Chamada do botão</label>
+                <input type="text" name="pages_components[${module_key}][banners][${banner_key}][text_button]" class="form-control" maxlength="255" id="pages-components-${module_key}-banners-${banner_key}-text-button" value="">
             </div>
             <div class="input text">
-                <label for="pages-components-0-banners-2-class">Classe do botão (blue, green, etc)</label>
-                <input type="text" name="pages_components[3][banners][0][class]" class="form-control" maxlength="15" id="pages-components-0-banners-2-class" value="blue">
+                <label for="pages-components-${module_key}-banners-${banner_key}-class">Classe do botão (blue, green, etc)</label>
+                <input type="text" name="pages_components[${module_key}][banners][${banner_key}][class]" class="form-control" maxlength="15" id="pages-components-${module_key}-banners-${banner_key}-class" value="blue">
             </div>
             <div class="input text">
-                <label for="pages-components-0-banners-2-url">Url</label>
-                <input type="text" name="pages_components[3][banners][0][url]" class="form-control" maxlength="255" id="pages-components-0-banners-2-url" value="#">
+                <label for="pages-components-${module_key}-banners-${banner_key}-url">Url</label>
+                <input type="text" name="pages_components[${module_key}][banners][${banner_key}][url]" class="form-control" maxlength="255" id="pages-components-${module_key}-banners-${banner_key}-url" value="">
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="input textarea">
-                <label for="pages-components-0-banners-2-text">Texto</label>
-                <textarea name="pages_components[3][banners][0][text]" class="smalleditor" id="pages-components-0-banners-2-text" rows="5">
-                    
-                </textarea>
+                <label for="pages-components-${module_key}-banners-${banner_key}-text">Texto</label>
+                <textarea name="pages_components[${module_key}][banners][${banner_key}][text]" class="new_editor" id="pages-components-${module_key}-banners-${banner_key}-text" rows="5"></textarea>
             </div>
         </div>
     </div>`;
 
-    $(`.banner-content[data-component=1]`).append(banner);
+    $(`.banner-content[module-id=${module_id}]`).append(banner);
 
-    console.log(banner);
+    turnRichEditor(`pages-components-${module_key}-banners-${banner_key}-text`);
+    // console.log(banner);
+}
+
+function turnRichEditor(query_selector) {
+    CKEDITOR.replace(query_selector, {
+        height: 120,
+        /* Default CKEditor styles are included as well to avoid copying default styles. */
+        customConfig: "./small.js"
+    });
 }
 
 function changeStatus(model, field, id) {

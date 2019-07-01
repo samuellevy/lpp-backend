@@ -54,7 +54,7 @@
 
       <?php foreach($page->pages_components as $key=>$page_component):?>
         <?php if($page_component->component->type=='editor'):?>
-          <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
+          <li class="module" style="cursor:move" data-sort="<?=$page_component->sort;?>" data-module="<?=$key?>">
             <div class="card card-shadow">
               <div class="content">  
                 <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
@@ -67,7 +67,7 @@
           </li>
 
         <?php elseif($page_component->component->type=='module'):?>
-          <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
+          <li class="module" style="cursor:move" data-sort="<?=$page_component->sort;?>">
             <div class="card card-shadow">
               <div class="content">  
                 <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
@@ -79,7 +79,7 @@
           </li>
 
         <?php elseif($page_component->component->type=='input'):?>
-          <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
+          <li class="module" style="cursor:move" data-sort="<?=$page_component->sort;?>">
             <div class="card card-shadow">
               <div class="content">  
                 <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
@@ -90,7 +90,7 @@
           </li>
 
         <?php elseif($page_component->component->type=='block'):?>
-          <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
+          <li class="module" style="cursor:move" data-sort="<?=$page_component->sort;?>">
             <div class="card card-shadow">
               <div class="content">  
                 <?php echo $this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
@@ -106,15 +106,15 @@
           </li>
 
         <?php elseif($page_component->component->type=='banner'):?>
-          <li style="cursor:move" data-sort="<?=$page_component->sort;?>">
+          <li class="module" style="cursor:move" data-sort="<?=$page_component->sort;?>">
             <div class="card card-shadow">
-              <div class="content banner-content" data-component="<?=$page_component->id;?>">
+              <div class="content banner-content" module-id="<?=$page_component->id;?>">
                 <label>Banners TESTE</label>
                 <?=$this->Form->hidden('pages_components.'.$key.'.id', ['class'=>'form-control']);?>
                 <?=$this->Form->hidden('pages_components.'.$key.'.caption', ['class'=>'form-control']);?>
 
                 <?php foreach($page_component->banners as $banner_key=>$banner):?>
-                  <div class="row row-dashed banner-component" data-id="banner-<?=$banner->id?>" data-component="<?=$page_component->id;?>">
+                  <div class="row row-dashed banner-component" data-id="banner-<?=$banner->id?>" module-id="<?=$page_component->id;?>">
                     <button type="button" class="close-button" data-id="banner-<?=$banner->id?>">x</button>
                     <div class="col-md-3 flex-options">
                       <label>Imagem</label>
@@ -139,7 +139,7 @@
                 <?php endforeach;?>
                 
               </div>
-              <button class="add_banner btn btn-fill" type="button" data-component="<?=$page_component->id;?>">Adicionar banner</button>
+              <button class="add_banner btn btn-fill" type="button" module-id="<?=$page_component->id?>" module-key="<?=$key?>">Adicionar banner</button>
             </div>
           </li>
           <?php endif;?>
