@@ -66,9 +66,8 @@ class PagesController extends AppController
           }
         }
       }
-      
       $page = $this->Pages->patchEntity($page, $data, ['associated'=>'PagesComponents.Banners.Files']);
-
+      
       //case block type on page_component
       foreach($page->pages_components as $key=>$page_component){
         if(isset($page_component->breaked_content)){
