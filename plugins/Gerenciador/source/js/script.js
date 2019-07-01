@@ -70,29 +70,53 @@ $(document).ready(function() {
 
 function createBanner(component) {
     console.log(component);
-    let count_banners = $(`.banner-component[data-component="${component}"]`)
-        .length;
-    let boilerplate = $(".boilerplate").html();
-    let random_id = Math.floor(Math.random() * 26) + Date.now();
-    boilerplate = boilerplate.replace(
-        /banner-component-boilerplate/g,
-        "banner-component"
-    );
-    boilerplate = boilerplate.replace(
-        /pages_components_boilerplate/g,
-        "pages_components"
-    );
-    boilerplate = boilerplate.replace(/{banner_id}/g, random_id);
-    boilerplate = boilerplate.replace(/{key}/g, component);
-    boilerplate = boilerplate.replace(/{banner_key}/g, count_banners);
-    $(`.banner-content[data-component="${component}"]`).append(boilerplate);
 
-    /** colocar ckeditor */
-    // CKEDITOR.replace(textarea, {
-    //     height: 120,
-    //     /* Default CKEditor styles are included as well to avoid copying default styles. */
-    //     customConfig: "./small.js"
-    // });
+    let banner = `
+    <div class="row row-dashed banner-component" data-id="banner-4" data-component="1">
+        <button type="button" class="close-button" data-id="banner-4">x</button>
+        <div class="col-md-3 flex-options">
+            <label>Imagem</label>
+            <img src="/img/../uploads/files/0b0aad53-7756-4e22-8180-4bc8fbf78d4e.png" class="scaled-img" data-uid="439" alt="">
+            <div class="input file">
+                <label for="pages-components-0-banners-2-file-filename">Arquivo</label>
+                <input type="file" name="pages_components[3][banners][0][file][filename]" class="" id="pages-components-0-banners-2-file-filename">
+            </div>
+            <input type="hidden" name="pages_components[3][banners][0][file][entity]" class="" label="Arquivo" value="Banner">
+        </div>
+
+        <div class="col-md-3 flex-options">
+            <input type="hidden" name="pages_components[3][banners][0][page_component_id]" value="4">
+            <div class="input text">
+                <label for="pages-components-0-banners-2-title">Título</label>
+                <input type="text" name="pages_components[3][banners][0][title]" class="form-control" maxlength="255" id="pages-components-0-banners-2-title" value="Fighting for a world with more peace, equality and solidarity">
+            </div>
+            <div class="input text">
+                <label for="pages-components-0-banners-2-text-button">Chamada do botão</label>
+                <input type="text" name="pages_components[3][banners][0][text_button]" class="form-control" maxlength="255" id="pages-components-0-banners-2-text-button" value="JOIN THE FIGHT">
+            </div>
+            <div class="input text">
+                <label for="pages-components-0-banners-2-class">Classe do botão (blue, green, etc)</label>
+                <input type="text" name="pages_components[3][banners][0][class]" class="form-control" maxlength="15" id="pages-components-0-banners-2-class" value="blue">
+            </div>
+            <div class="input text">
+                <label for="pages-components-0-banners-2-url">Url</label>
+                <input type="text" name="pages_components[3][banners][0][url]" class="form-control" maxlength="255" id="pages-components-0-banners-2-url" value="#">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input textarea">
+                <label for="pages-components-0-banners-2-text">Texto</label>
+                <textarea name="pages_components[3][banners][0][text]" class="smalleditor" id="pages-components-0-banners-2-text" rows="5">
+                    
+                </textarea>
+            </div>
+        </div>
+    </div>`;
+
+    $(`.banner-content[data-component=1]`).append(banner);
+
+    console.log(banner);
 }
 
 function changeStatus(model, field, id) {
