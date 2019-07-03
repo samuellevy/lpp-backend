@@ -72,6 +72,9 @@ msgstr "Leave your feedback, make a suggestion and send us your queries."
 msgid "Parcerias Institucionais"
 msgstr "Institutional Partners"
 
+msgid "Institucional"
+msgstr "Board of Trustees"
+
 msgid "Parceiros"
 msgstr "Partners"
 

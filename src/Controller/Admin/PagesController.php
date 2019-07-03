@@ -13,7 +13,6 @@ class PagesController extends AppController
   }
   
   public function home(){
-    
   }
   
   public function index(){
@@ -111,11 +110,5 @@ class PagesController extends AppController
     }
     
     return $this->redirect(['action' => 'index']);
-  }
-  
-  public function teste(){
-    $this->loadModel('Timeline');
-    $timeline = $this->Timeline->getByYears();
-    die(debug($timeline));    
   }
 }

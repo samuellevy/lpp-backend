@@ -5,7 +5,7 @@
             <div class="item">
                 <?php if($positions[0]->status):?>
                     <span><?=$positions[0]->title;?></span>
-                    <div class="equipe personOrder">
+                    <div class="equipe">
                         <?php foreach($positions[0]->team as $person):?>
                             <div class="person">
                                 <?php if(isset($person['files'][0])):?>
