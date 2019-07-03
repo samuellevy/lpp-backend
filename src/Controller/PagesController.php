@@ -138,6 +138,12 @@ class PagesController extends AppController
 				if ($this->request->is('post')) {
 					$this->contact($this->request->getData());
 				}
+
+				$this->loadModel('Units');
+				$special_unit = $this->Units->find('all',['conditions'=>['featured'=>1]])->all()->first();
+				// die(debug($special_unit));
+				$units = $this->Units->find('all', ['conditions'=>['featured'=>0]])->all()->toArray();
+				$this->set(compact('units', 'special_unit'));
 			break;
 
 			case 'our-results':
@@ -274,29 +280,31 @@ class PagesController extends AppController
 		// die(debug($post));
 	}
 
-	public function contact($message, $origin=null){
+	public function contact($message=null, $origin=null){
 		// die(debug($message['assunto']));
+		$this->loadModel('Subjects');
+		$subjects = $this->Subjects->find()->all()->toArray();
 
 		switch($message['assunto']):
 			default:
-				$assunto = 'Dúvidas';
-				$email = 'info@lutapelapaz.org';
+				$assunto = $subjects[0]->title;
+				$email = $subjects[0]->email;
 				break;
 			case 1:
-				$assunto = 'Dúvidas';
-				$email = 'info@lutapelapaz.org';
+				$assunto = $subjects[1]->title;
+				$email = $subjects[1]->email;
 				break;
 			case 2:
-				$assunto = 'Sugestões';
-				$email = 'info@lutapelapaz.org';
+				$assunto = $subjects[2]->title;
+				$email = $subjects[2]->email;
 				break;
 			case 3:
-				$assunto = 'Doação';
-				$email = 'soudoador@lutapelapaz.org';
+				$assunto = $subjects[3]->title;
+				$email = $subjects[3]->email;
 				break;
 			case 4:
-				$assunto = 'Parcerias';
-				$email = 'captacao@lutapelapaz.org';
+				$assunto = $subjects[4]->title;
+				$email = $subjects[4]->email;
 				break;
 			case 5:
 				$assunto = 'Newsletter';
