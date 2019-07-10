@@ -74,6 +74,7 @@
                 <?php echo $this->Form->hidden('pages_components.'.$key.'.sort', ['class'=>'form-control sortfield']);?>
                 <?php echo $this->Form->control('pages_components.'.$key.'.caption', ['class'=>'form-control', 'label'=>$page_component->caption]);?>
                 <?php echo $this->Form->control('pages_components.'.$key.'.content', ['class'=>'form-control', 'type'=>'text','label'=>false, 'disabled'=>'disabled']);?>
+                <?php echo $this->Form->control('pages_components.'.$key.'.params', ['class'=>'form-control', 'type'=>'text','label'=>false]);?>
               </div>
             </div>
           </li>

@@ -3,6 +3,7 @@
         <h2><?=__("Vidas Transformadas");?></h2>
         <div class="box">
             <?php foreach($testimonials as $testimonial):?>
+            <?php $params = json_decode($component->params);?>
             <div class="item">
                 <div class="media">
                     <?php if(isset($testimonial['files'][0])):?>
@@ -15,6 +16,6 @@
                 </div>
             </div>
             <?php endforeach; ?>
-        </div><a class="btn_more" href="/nossas-conquistas"><?=__("Acompanhe");?></a>
+        </div><a class="btn_more" href="<?=$params->url;?>"><?=__("Acompanhe");?></a>
     </div>
 </div>

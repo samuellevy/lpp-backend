@@ -1,3 +1,4 @@
+<?php $params = json_decode($component->params);?>
 <div class="numbers_home">
     <div class="box">
         <div class="destaque">
@@ -6,7 +7,7 @@
                     <?=$this->Html->image('../uploads/files/'.$numbers[0]->desktop[0]->filename, ['class'=>'desktop']);?>
                     <?=$this->Html->image('../uploads/files/'.$numbers[0]->mobile[0]->filename, ['class'=>'mobile']);?>
                 </div>
-                <a class="btn_numbers" href="/nossas-conquistas"><?=__("acompanhe nossas conquistas");?></a>
+                <a class="btn_numbers" href="<?=$params->url;?>"><?=__("acompanhe nossas conquistas");?></a>
             </div>
         </div>
         <div class="display">
